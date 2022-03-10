@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_summary"
+        android:icon="@drawable/ic_file_document"
+        android:title="@string/summary_menu_text"/>
+    <item
+        android:id="@+id/action_details"
+        android:icon="@drawable/ic_file_find"
+        android:title="@string/details_menu_text"/>
+    <item
+        android:id="@+id/action_punches"
+        android:icon="@drawable/ic_punches"
+        android:title="@string/punches_menu_text"/>
+    <item
+        android:id="@+id/action_hours"
+        android:icon="@drawable/ic_timer_sand"
+        android:title="@string/hours_menu_text"/>
+    <item
+        android:id="@+id/action_dollars"
+        android:icon="@drawable/ic_currency_usd"
+        android:title="@string/dollars_menu_text"/>
+</menu>

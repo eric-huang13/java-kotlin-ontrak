@@ -1,0 +1,37 @@
+
+     ▄██████▄  ███▄▄▄▄       ███        ▄████████    ▄████████    ▄█   ▄█▄ 
+    ███    ███ ███▀▀▀██▄ ▀█████████▄   ███    ███   ███    ███   ███ ▄███▀ 
+    ███    ███ ███   ███    ▀███▀▀██   ███    ███   ███    ███   ███▐██▀   
+    ███    ███ ███   ███     ███   ▀  ▄███▄▄▄▄██▀   ███    ███  ▄█████▀    
+    ███    ███ ███   ███     ███     ▀▀███▀▀▀▀▀   ▀███████████ ▀▀█████▄    
+    ███    ███ ███   ███     ███     ▀███████████   ███    ███   ███▐██▄   
+    ███    ███ ███   ███     ███       ███    ███   ███    ███   ███ ▀███▄ 
+     ▀██████▀   ▀█   █▀     ▄████▀     ███    ███   ███    █▀    ███   ▀█▀ 
+                                       ███    ███                ▀         
+
+█ ██ ███ ████ █████ ██████ ███████ ██ ███████ ██████ ██████ █████ ████ ███ ██ █
+
+  BUILD CREATION
+
+█ ██ ███ ████ █████ ██████ ███████ ██ ███████ ██████ ██████ █████ ████ ███ ██ █
+
+   •  An account with firebase must be setup to generate the google-services.json 
+      file with all the configured build variants and place it in the project's
+      file system in order for the project to compile.
+
+█ ██ ███ ████ █████ ██████ ███████ ██ ███████ ██████ ██████ █████ ████ ███ ██ █
+
+  NOTES
+
+█ ██ ███ ████ █████ ██████ ███████ ██ ███████ ██████ ██████ █████ ████ ███ ██ █
+
+   •  OnTrak is configured with three build variants to manage pre-production 
+      builds across multiple environments (ex. Development vs Production).
+
+   •  "OnTrak RC" and "OnTrak"(Prod) build variants share the same prod server
+      API URL configuration, the difference is RC is debuggable.
+
+   •  "OnTrak DEV" is the development build variant and uses a development API 
+      URL.
+
+█ ██ ███ ████ █████ ██████ ███████ ██ ███████ ██████ ██████ █████ ████ ███ ██ █

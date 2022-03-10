@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activity.TimeOffRequestDetailsActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <fragment
+        android:id="@+id/time_off_request_details_fragment"
+        android:name="com.insperity.escmobile.view.fragment.TimeOffRequestDetailsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        tools:layout="@layout/fragment_time_off_request_details" />
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.insperity.escmobile.view.activity.MainOrgItemsSearchActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <fragment
+            android:id="@+id/employee_directory_fragment"
+            android:name="com.insperity.escmobile.view.fragment.OrgItemsSearchFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UnknownIdInLayout"
+            tools:layout="@layout/fragment_org_level_search"/>
+
+        <include layout="@layout/progress_bar"/>
+    </RelativeLayout>
+</RelativeLayout>

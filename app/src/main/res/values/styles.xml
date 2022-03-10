@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.SplashTheme" parent="@style/AppTheme">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Hamburger Menu -->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="SpinnerItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- INLINE Spinner -->
+    <style name="AppTheme.InlineSpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="AppTheme.InlineSpinnerStyle.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/text_blue</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="ButtonGreen">
+        <item name="android:padding">@dimen/half_margin</item>
+        <item name="android:background">@drawable/button_green</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="ButtonOrange">
+        <item name="android:padding">@dimen/full_margin</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:radius">4dp</item>
+        <item name="android:background">@drawable/button_orange</item>
+        <item name="android:textColor">@color/text_white</item>
+        <!--<item name="android:textSize">16sp</item>-->
+    </style>
+
+    <style name="ButtonGrey">
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:radius">4dp</item>
+        <item name="android:background">@drawable/button_grey</item>
+        <item name="android:textColor">@color/text_white</item>
+        <!--<item name="android:textSize">16sp</item>-->
+    </style>
+
+    <!-- TableRow styles -->
+    <style name="default_table_row_label">
+        <item name="android:layout_marginTop">@dimen/full_margin</item>
+        <item name="android:layout_marginBottom">@dimen/full_margin</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:layout_marginLeft">48dp</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="contacts_table_row">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:weightSum">6</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="contact_table_row_label">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left|top</item>
+    </style>
+
+    <style name="default_table_row_detail">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="list_group_header" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:textColor">@color/text_green</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="list_group_header_text" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textColor">@color/text_green</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="list_small_item_label" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_width">112dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="list_small_item_detail" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">@font/noto_sans</item>
+    </style>
+
+    <!-- BetterPickers -->
+    <style name="GreenBetterPickers" parent="BetterPickersRadialTimePickerDialog.PrimaryColor">
+        <item name="bpPreHeaderBackgroundColor">@color/insperity_green</item>
+        <item name="bpHeaderBackgroundColor">@color/insperity_green</item>
+        <item name="bpBodySelectedTextColor">@color/insperity_green</item>
+        <item name="bpRadialTextColor">@color/insperity_green</item>
+        <item name="bpAmPmCircleColor">@color/insperity_green</item>
+        <item name="bpRadialPointerColor">@color/insperity_green</item>
+        <item name="bpButtonsTextColor">@color/insperity_green</item>
+    </style>
+
+    <style name="smallSpinnerItemStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="commonListItemStyle">
+    </style>
+
+    <style name="CalendarCell.DayHeader">
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarTitle">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+    </style>
+
+    <style name="AppTheme.PunchSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/punch_spinner_bg</item>
+    </style>
+
+    <style name="AppTheme.TimeOffApprovalSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/time_off_approval_spinner_bg</item>
+    </style>
+
+    <style name="ButtonGreenLight">
+        <item name="android:background">@drawable/button_green_light</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="ButtonRedLight">
+        <item name="android:background">@drawable/button_red_light</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="ButtonGreyLight">
+        <item name="android:background">@drawable/button_grey</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+    <style name="PopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:itemBackground">@drawable/popup_menu_bg</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+</resources>

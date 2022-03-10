@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activity.TimeOffApprovalDetailsActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/white">
+
+        <fragment
+            android:id="@+id/time_off_approval_details_fragment"
+            android:name="com.insperity.escmobile.view.fragment.TimeOffApprovalDetailsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_time_off_approval_details"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/viewPagerIndicatorContainer"
+            android:layout_below="@+id/time_off_approval_details_fragment"/>
+
+        <FrameLayout
+            android:id="@+id/viewPagerIndicatorContainer"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_grey">
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/viewPagerIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:padding="5dp"
+                app:centered="true"
+                app:fillColor="@color/insperity_blue_light"
+                app:pageColor="@color/text_grey_light"
+                app:radius="4dp"
+                app:strokeColor="@android:color/transparent"
+                app:strokeWidth="1.5dp"/>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

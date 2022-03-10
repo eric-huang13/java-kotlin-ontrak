@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.insperity.escmobile.view.widget.EndlessLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginEnd="@dimen/full_margin"
+        android:layout_marginStart="@dimen/half_margin">
+
+        <CheckBox
+            android:id="@+id/selectAllCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/rounded_checkbox_bg"/>
+
+        <TextView
+            android:id="@+id/nameHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/name_header_text"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/empAppHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/employee_approved_header_text"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/totalHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:text="@string/total_header_text"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/dollarsHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:text="@string/dollars_header_text"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_grey"/>
+</com.insperity.escmobile.view.widget.EndlessLinearLayout>

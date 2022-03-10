@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/insperity_blue_deep</color>
+    <color name="colorPrimaryDark">@color/insperity_blue_deeper</color>
+    <color name="colorAccent">@color/insperity_blue_light</color>
+
+    <color name="insperity_green">#439639</color>
+    <color name="insperity_green_light">#81c341</color>
+    <color name="insperity_green_light_transparent">#6681c341</color>
+    <color name="insperity_green_lightest">#e6f3d9</color>
+    <color name="insperity_blue_deeper">#003153</color>
+    <color name="insperity_blue_deep">#004677</color>
+    <color name="insperity_blue_dark">#1c546f</color>
+    <color name="insperity_blue">#006595</color>
+    <color name="insperity_blue_light">#00abe8</color>
+    <color name="insperity_blue_lighter">#5ba6ca</color>
+    <color name="insperity_blue_lightest">#83CEF2</color>
+    <color name="insperity_purple">#952478</color>
+    <color name="insperity_purple_light">#ab5093</color>
+    <color name="insperity_purple_lighter">#bf7cae</color>
+    <color name="insperity_orange">#f27430</color>
+    <color name="insperity_orange_light">#f59059</color>
+    <color name="insperity_orange_lighter">#f7ac83</color>
+    <color name="insperity_yellow">#fdb414</color>
+    <color name="insperity_yellow_light">#fdc343</color>
+    <color name="insperity_yellow_lighter">#fed272</color>
+    <color name="insperity_yellow_lightest">#fff0d0</color>
+    <color name="insperity_tan">#e1ddcc</color>
+    <color name="insperity_tan_light">#e7e4d6</color>
+    <color name="insperity_tan_lighter">#edebe0</color>
+    <color name="insperity_red">#e73332</color>
+
+    <array name="chart_colors_array">
+        <item>@color/insperity_green</item>
+        <item>@color/insperity_blue_lightest</item>
+        <item>@color/insperity_blue_light</item>
+        <item>@color/insperity_blue</item>
+        <item>@color/insperity_blue_deep</item>
+        <item>@color/insperity_purple</item>
+        <item>@color/insperity_purple_light</item>
+        <item>@color/insperity_purple_lighter</item>
+        <item>@color/insperity_orange</item>
+        <item>@color/insperity_orange_light</item>
+        <item>@color/insperity_orange_lighter</item>
+        <item>@color/insperity_yellow</item>
+        <item>@color/insperity_yellow_light</item>
+        <item>@color/insperity_yellow_lighter</item>
+        <item>@color/insperity_tan</item>
+        <item>@color/insperity_tan_light</item>
+        <item>@color/insperity_tan_lighter</item>
+    </array>
+
+    <color name="list_item_background">#f5f5f5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="grey">#ff666666</color>
+
+    <color name="light_blue">#ff00A9E7</color>
+    <color name="background_default">#ffffff</color>
+    <color name="background_grey">#ffe5e5e5</color>
+    <color name="empty_background">#ffe2e2e2</color>
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="text_green">#439639</color>
+    <color name="text_blue">#006595</color>
+    <color name="text_orange">#ffff9900</color>
+
+    <color name="fill_grey">#FAFAFA</color>
+    <color name="stroke_grey">#E5E5E5</color>
+    <color name="button_approve_color">#82c341</color>
+    <color name="button_reject_color">#d9272e</color>
+    <color name="button_cancel_color">#999999</color>
+
+    <color name="text_black">#333333</color>
+    <color name="text_grey_dark">#333333</color>
+    <color name="text_grey">#666666</color>
+    <color name="text_grey_light">#999999</color>
+    <color name="text_grey_lighter">#e5e5e5</color>
+    <color name="text_link">#1570A6</color>
+    <color name="text_red">#e73332</color>
+
+    <color name="button_grey">#666666</color>
+    <color name="button_grey_light">#999999</color>
+    <color name="button_grey_lighter">#cccccc</color>
+    <color name="button_grey_lightest">#ededed</color>
+
+    <color name="black_overlay">#4D000000</color>
+
+    <color name="uhc_card_toolbar_black_overlay">#8C000000</color>
+
+    <color name="white70pc">#b2ffffff</color>
+
+    <color name="logo_rounded_stroke_color">#e5e5e5</color>
+</resources>

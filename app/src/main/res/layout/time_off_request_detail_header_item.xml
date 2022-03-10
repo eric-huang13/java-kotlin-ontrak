@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cancelledReferenceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/insperity_red"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="2"
+        android:paddingBottom="@dimen/quarter_margin"
+        android:paddingEnd="@dimen/full_margin"
+        android:paddingStart="@dimen/full_margin"
+        android:paddingTop="@dimen/quarter_margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small"
+        android:visibility="gone"
+        tools:text="This is a cancelled request"
+        tools:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/half_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/totalHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_off_total_hours_text"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/totalHoursText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totalHeaderText"
+            android:textColor="@color/insperity_green"
+            android:textSize="@dimen/text_xxlarge"
+            android:textStyle="bold"
+            tools:text="8h"/>
+
+        <TextView
+            android:id="@+id/statusHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/time_off_status_text"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/statusHeaderText"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/quarter_margin"
+                android:textSize="@dimen/text_xxlarge"
+                tools:text="Unanswered"/>
+
+            <ImageView
+                android:id="@+id/statusImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/ic_time_off_unanswered"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/half_margin"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="@dimen/half_margin"
+            android:layout_weight=".33"
+            android:gravity="start|center_vertical"
+            android:text="@string/time_off_submitted_date"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/submittedDateText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight=".67"
+            android:gravity="start|center_vertical"
+            android:textSize="12sp"
+            tools:text="02/15/2017 11:34 AM"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/half_margin"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="@dimen/half_margin"
+            android:layout_weight=".33"
+            android:text="@string/time_off_comment_text"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/commentText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/half_margin"
+            android:layout_weight=".67"
+            android:textSize="12sp"
+            tools:text="Dummy commentsdf sdfsddsf fsdfd fdsf dsf dsfdsfdsfds fsfdsf dsf.sdfs sdv s sd sd dssdsd sd d sd ds sd ds sd sd ds sd ds ds ds sd ds dds sdd ds sd sd ds ds ds ds ds sd dds d ssd sd sd ds sd .."/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/half_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/half_margin"
+        android:text="@string/time_off_request_dates_hint_text"
+        android:textColor="@color/insperity_green"
+        android:textSize="@dimen/text_large"/>
+
+    <include layout="@layout/time_off_date_header"/>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.fragment.RecentPunchesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/half_margin"
+            android:background="@color/fill_grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/quarter_margin"
+            android:paddingEnd="@dimen/full_margin"
+            android:paddingStart="@dimen/full_margin"
+            android:paddingTop="@dimen/full_margin"
+            android:text="@string/punch_recent_hint_text"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/noRecentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/full_margin"
+            android:paddingEnd="@dimen/full_margin"
+            android:paddingStart="@dimen/full_margin"
+            android:paddingTop="12dp"
+            android:text="@string/punch_no_recent_hint_text"
+            android:textColor="@color/text_black"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/half_margin"
+            android:scrollbars="none"
+            android:visibility="gone"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:visibility="visible"/>
+    </LinearLayout>
+</FrameLayout>

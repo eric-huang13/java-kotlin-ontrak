@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_grey">
+
+    <TextView
+        android:id="@+id/errorMessageText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/insperity_red"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="2"
+        android:paddingStart="@dimen/full_margin"
+        android:paddingTop="@dimen/quarter_margin"
+        android:paddingEnd="@dimen/full_margin"
+        android:paddingBottom="@dimen/quarter_margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Missing punches."
+        tools:visibility="visible"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/employeeApprovedContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/half_margin"
+        android:layout_marginTop="@dimen/half_margin"
+        android:layout_marginEnd="@dimen/half_margin"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/supervisorApprovedContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorMessageText"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/checkImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/quarter_margin"
+            android:src="@drawable/ic_check"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/quarter_margin"
+            android:text="@string/employee_approved_text"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/checkImage1"
+            app:layout_constraintStart_toEndOf="@+id/checkImage1"
+            app:layout_constraintTop_toTopOf="@+id/checkImage1"/>
+
+        <TextView
+            android:id="@+id/employeeUnapproveLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/quarter_margin"
+            android:text="@string/unapprove_link_text"
+            android:textColor="@color/text_link"
+            app:layout_constraintBottom_toBottomOf="@+id/checkImage1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checkImage1"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/supervisorApprovedContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/half_margin"
+        android:layout_marginTop="@dimen/half_margin"
+        android:layout_marginEnd="@dimen/half_margin"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/timeReviewCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/employeeApprovedContainer"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/checkImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/quarter_margin"
+            android:src="@drawable/ic_check"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/quarter_margin"
+            android:text="@string/supervisor_approved_text"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/checkImage2"
+            app:layout_constraintStart_toEndOf="@+id/checkImage2"
+            app:layout_constraintTop_toTopOf="@+id/checkImage2"/>
+
+        <TextView
+            android:id="@+id/supervisorUnapproveLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/quarter_margin"
+            android:text="@string/unapprove_link_text"
+            android:textColor="@color/text_link"
+            app:layout_constraintBottom_toBottomOf="@+id/checkImage2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checkImage2"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/timeReviewCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/half_margin"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supervisorApprovedContainer"
+        card_view:cardCornerRadius="2dp"
+        tools:visibility="visible">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cardViewsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/full_margin">
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                app:layout_constraintEnd_toStartOf="@+id/payPeriodText"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Amy Murphy"/>
+
+            <TextView
+                android:id="@+id/idText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_grey_light"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameText"
+                tools:text="182895"/>
+
+            <com.insperity.escmobile.view.widget.PayPeriodView
+                android:id="@+id/payPeriodText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_link"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="06/05/2018 - 06/16/2018"/>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/totalsContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/actionsContainer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idText"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/totalHoursAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/insperity_green"
+                    android:textSize="@dimen/card_totals_text_size"
+                    app:layout_constraintEnd_toStartOf="@+id/punchesAmountText"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="80.00"/>
+
+                <TextView
+                    android:id="@+id/punchesAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/card_totals_text_size"
+                    app:layout_constraintEnd_toStartOf="@+id/hoursAmountText"
+                    app:layout_constraintStart_toEndOf="@+id/totalHoursAmountText"
+                    tools:text="0.00"/>
+
+                <TextView
+                    android:id="@+id/hoursAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/card_totals_text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/punchesAmountText"
+                    tools:text="80.00"/>
+
+                <TextView
+                    android:id="@+id/totalHoursHintText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/total_hours_hint_text"
+                    android:textSize="@dimen/text_small"
+                    app:layout_constraintEnd_toEndOf="@+id/totalHoursAmountText"
+                    app:layout_constraintStart_toStartOf="@+id/totalHoursAmountText"
+                    app:layout_constraintTop_toBottomOf="@+id/totalHoursAmountText"/>
+
+                <TextView
+                    android:id="@+id/punchesHintText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/punches_hint_text"
+                    android:textSize="@dimen/text_small"
+                    app:layout_constraintEnd_toEndOf="@+id/punchesAmountText"
+                    app:layout_constraintStart_toStartOf="@+id/punchesAmountText"
+                    app:layout_constraintTop_toBottomOf="@+id/punchesAmountText"/>
+
+                <TextView
+                    android:id="@+id/hoursHintText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/hours_hint_text"
+                    android:textSize="@dimen/text_small"
+                    app:layout_constraintEnd_toEndOf="@+id/hoursAmountText"
+                    app:layout_constraintStart_toStartOf="@+id/hoursAmountText"
+                    app:layout_constraintTop_toBottomOf="@+id/hoursAmountText"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/actionsContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalsContainer"
+                tools:visibility="visible">
+
+                <Button
+                    android:id="@+id/employeeApproveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/half_margin"
+                    android:background="@drawable/button_orange"
+                    android:text="@string/employee_approve_btn_text"
+                    android:textColor="@color/text_white"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible"/>
+
+                <Button
+                    android:id="@+id/supervisorApproveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/half_margin"
+                    android:background="@drawable/button_purple"
+                    android:text="@string/supervisor_approve_btn_text"
+                    android:textColor="@color/text_white"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/employeeApproveButton"
+                    tools:visibility="visible"/>
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

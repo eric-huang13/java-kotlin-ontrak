@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grey_bottom_border_background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/full_margin"
+    android:paddingEnd="@dimen/half_margin"
+    android:paddingStart="@dimen/half_margin"
+    android:paddingTop="@dimen/full_margin">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingStart="@dimen/half_margin"
+        android:text="@string/time_off_date"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".28"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/time_off_hours"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".28"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/half_margin"
+        android:text="@string/time_off_pay_type"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/schedulingText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".24"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/half_margin"
+        android:text="@string/time_off_scheduling"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,246 @@
+<resources>
+    <!--Dialog btn texts-->
+    <string name="ok_btn_text">OK</string>
+    <string name="cancel_btn_text">Cancel</string>
+    <string name="submit_btn_text">Submit</string>
+
+    <!--Time punch-->
+    <string name="punch_btn_text">Punch</string>
+    <string name="punch_comment_hint">Comment</string>
+    <string name="punch_recent_hint_text">RECENT ACTIVITY</string>
+    <string name="punch_no_recent_hint_text">No recent activity.</string>
+    <string name="punch_no_comment_text">No comment.</string>
+    <string name="activity_punch_title">Time Punch</string>
+    <string name="default_org_level_hint_text">Default Org Level</string>
+    <string name="clock_default_time_text">00:00</string>
+    <string name="clock_default_am_pm_text">AM</string>
+    <string name="punch_no_available_hint_text">Punch functionality not available</string>
+    <string name="organization_levels_hint_text">Organization Levels</string>
+    <string name="no_switch_text">No</string>
+    <string name="yes_switch_text">Yes</string>
+    <string name="today_punch_text">Today</string>
+    <string name="yesterday_punch_text">Yesterday</string>
+    <string name="offline_mode_submitted_punch_text">Punch saved. Connection required.</string>
+    <string name="not_connected_punch_submission_text">No internet connection available.</string>
+    <string name="select_category_error_text">Please select a punch category.</string>
+    <string name="punch_submission_error_text">Service Unavailable. Please try again later.</string>
+    <string name="n_a_punch_text">N/A</string>
+    <string name="select_punch_category_hint_text">Select a punch category&#8230;</string>
+    <string name="punch_tab_text">PUNCH</string>
+    <string name="transfer_tab_text">TRANSFER</string>
+    <string name="no_org_items_text">No Organization Items found</string>
+    <string name="search_org_items_text">Search</string>
+
+    <!--Time Off Request-->
+    <string name="activity_time_off_requests_title">Time Off Requests</string>
+    <string name="activity_time_off_submit_title">Create Request</string>
+    <string name="activity_time_off_add_dates_title">Add Dates</string>
+    <string name="activity_time_off_request_details_title">Request Details</string>
+    <string name="accrued_as_of_date">Balance as of %s</string>
+    <string name="time_off_date">Date</string>
+    <string name="time_off_hours">Hours</string>
+    <string name="time_off_pay_type">Pay Type</string>
+    <string name="time_off_scheduling">Scheduling</string>
+    <string name="time_off_no_comment_text">No comment.</string>
+    <string name="time_off_select_recipient_hint_text">Select Recipients</string>
+    <string name="time_off_no_requests">You currently have no personal requests.</string>
+    <string name="time_off_no_dates">You have not requested any dates.</string>
+    <string name="time_off_menu_add_request">Add Request</string>
+    <string name="time_off_submitted_date">Submitted Date</string>
+    <string name="time_off_comment_text">Comment</string>
+    <string name="time_off_unanswered">Unanswered</string>
+    <string name="time_off_request_not_ready_text">Time Off Request not ready yet.</string>
+    <string name="view_range_text">View Range</string>
+    <string name="range_to_text">to</string>
+    <string name="time_off_submitted_date_text">Submitted</string>
+    <string name="time_off_status_text">Status</string>
+    <string name="time_off_submit_text">Submit</string>
+    <string name="time_off_add_date_text">Add Date</string>
+    <string name="time_off_add_date_cap_text">ADD REQUEST DATE</string>
+    <string name="time_off_submit_to_text">Submit To</string>
+    <string name="time_off_start_time_text">Start Time</string>
+    <string name="time_off_hours_per_day_text">Hours Per Day</string>
+    <string name="time_off_schedule_text">Scheduling</string>
+    <string name="time_off_empty_dates_error_text">Please select at least one date to add.</string>
+    <string name="max_recipient_selected_error">%d recipients maximum</string>
+    <string name="min_recipient_selected_error">%d recipients minimum</string>
+    <string name="date_removed_hint_text">Date removed</string>
+    <string name="action_undo_text">Undo</string>
+    <string name="time_off_total_hours_text">Total Hours</string>
+    <string name="time_off_request_dates_hint_text">Request Date(s)</string>
+    <string name="time_off_request_responses_hint_text">Responses</string>
+    <string name="time_off_no_date_error_text">Please select at least one date.</string>
+    <string name="time_off_zero_hours_error_text">You can not request zero (0) hours of time off.</string>
+    <string name="time_off_negative_balance_error_text">Negative balances not allowed.</string>
+    <string name="time_off_select_recipient_error_text">Please select recipients.</string>
+    <string name="time_off_request_submitted_text">Request submitted.</string>
+    <string name="time_off_request_submission_failed_error_text">Error submitting, please try again later.</string>
+    <string name="time_off_discard_new_request_text">Your changes have not been submitted. Press OK to continue without submitting those changes.</string>
+    <string name="time_off_service_error_text">@string/punch_submission_error_text</string>
+    <string name="day_name_format">EEEEE</string>
+    <string name="time_off_request_details_error_text">There was an error retrieving the request</string>
+    <string name="withdrawn_request_red_text">You have withdrawn this request</string>
+    <string name="cancelled_request_red_text">You have cancelled this request</string>
+    <string name="withdrawn_request_to_approve_red_text">This is a request for cancellation</string>
+    <string name="select_hours_per_day_text">Select hours per day</string>
+
+    <!--Time Off Approval-->
+    <string name="activity_time_off_approvals_title">Time Off Approvals</string>
+    <string name="activity_time_off_approval_details_title">Time Off Approval Details</string>
+    <string name="activity_time_off_approve_title">Approve Request</string>
+    <string name="activity_time_off_decline_title">Decline Request</string>
+    <string-array name="time_off_approval_tabs">
+        <item>REQUESTS</item>
+        <item>APPROVED</item>
+        <item>DECLINED</item>
+    </string-array>
+    <string name="time_off_no_approval_requests">You currently have no employee requests.</string>
+    <string name="approve_request_button_text">Approve</string>
+    <string name="decline_request_button_text">Decline</string>
+    <string name="approve_request_code_text">APPR</string>
+    <string name="decline_request_code_text">DECL</string>
+    <string name="time_off_calendar_text">Calendar</string>
+    <string name="time_off_details_text">Request details</string>
+    <string name="decline_request_confirmation_text">You are about to decline this request. Do you want to proceed?</string>
+    <string name="select_recipients_hint_text">Tap to select recipients</string>
+    <string name="time_off_approval_service_error_text">There was an error trying to submit the request</string>
+    <string name="time_off_send_request_to_text">Send Request To</string>
+    <string name="time_off_response_text">Response</string>
+    <string name="recipients_selection_required_text">This field is required</string>
+
+    <!--Time Review-->
+    <string name="activity_time_review_title">Timesheet</string>
+    <string name="activity_time_entry_supervisor_title">Time Management</string>
+    <string name="total_hours_summary_text">SUMMARY</string>
+    <string name="total_hours_date_text">@string/time_off_date</string>
+    <string name="total_hours_type_text">Type</string>
+    <string name="total_hours_hours_text">@string/time_off_hours</string>
+    <string name="total_hours_hint_text">TOTAL HOURS</string>
+    <string name="hours_hint_text">HOURS</string>
+    <string name="punches_hint_text">PUNCHES</string>
+    <string name="service_not_available_error_text">Service currently not available. Please try again later.</string>
+    <string name="supervisor_approved_text">SUPERVISOR APPROVED</string>
+    <string name="employee_approved_text">EMPLOYEE APPROVED</string>
+    <string name="unapprove_link_text">Unapprove?</string>
+    <string name="employee_approve_btn_text">Employee approve</string>
+    <string name="supervisor_approve_btn_text">Supervisor approve</string>
+    <string name="no_information_found_text">There are no records in this date range to display.</string>
+    <string name="current_pay_period_text">Current Pay Period</string>
+    <string name="actual_date_header_text">Actual Date</string>
+    <string name="eff_date_header_text">Eff. Date</string>
+    <string name="effective_date_header_text">Effective Date</string>
+    <string name="start_time_header_text">Start Time</string>
+    <string name="stop_time_header_text">Stop Time</string>
+    <string name="start_date_time_header_text">Start Date/Time</string>
+    <string name="stop_date_time_header_text">Stop Date/Time</string>
+    <string name="start_type_header_text">Start Type</string>
+    <string name="stop_type_header_text">Stop Type</string>
+    <string name="start_date_header_text">Start Date</string>
+    <string name="stop_date_header_text">Stop Date</string>
+    <string name="end_date_header_text">End Date</string>
+    <string name="pay_type_header_text">Pay Type</string>
+    <string name="pay_rate_header_text">Pay Rate</string>
+    <string name="shift_type_header_text">Shift Type</string>
+    <string name="shift_header_text">Shift</string>
+    <string name="lunch_header_text">Lunch</string>
+    <string name="hours_header_text">Hours</string>
+    <string name="device_header_text">Device Number</string>
+    <string name="schedule_deviation_hint_text">Schedule Deviation</string>
+    <string name="scheduling_header_text">Scheduling</string>
+    <string name="deviation_type_header_text">Deviation Type</string>
+    <string name="actual_time_date_header_text">Actual Date/Time</string>
+    <string name="punch_type_header_text">Type</string>
+    <string name="punch_category_header_text">Punch Category</string>
+    <string name="rounded_time_date_header_text">Rounded Date/Time</string>
+    <string name="round_source_header_text">Round Source</string>
+    <string name="info_header_text">Info</string>
+    <string name="dollars_header_text">Dollars</string>
+    <string name="amount_header_text">Amount</string>
+    <string name="vehicle_header_text">Vehicle</string>
+    <string name="rate_header_text">Rate</string>
+    <string name="begin_miles_header_text">Begin Miles</string>
+    <string name="end_miles_header_text">End Miles</string>
+    <string name="total_miles_header_text">Total Miles</string>
+    <string name="comment_header_text">Comment</string>
+    <string name="missing_punch_text">Missing Punch</string>
+    <string name="detail_total_hours_header_text">Total Hours Details</string>
+    <string name="detail_hours_header_text">Hours Details</string>
+    <string name="detail_punches_header_text">Punch Details</string>
+    <string name="detail_dollars_header_text">Dollars Details</string>
+    <string name="detail_mileage_header_text">Mileage Details</string>
+    <string name="summary_menu_text">Summary</string>
+    <string name="details_menu_text">Detail</string>
+    <string name="punches_menu_text">Punches</string>
+    <string name="hours_menu_text">Hours</string>
+    <string name="dollars_menu_text">Dollars</string>
+    <string name="time_approve_confirmation_text">Approve entire timesheet for this employee in period %s?</string>
+    <string name="time_unapprove_confirmation_text">Unapprove entire timesheet for this employee in period %s?</string>
+    <string name="double_dash_text">--</string>
+    <string name="comment_text">Comment</string>
+    <string name="supervisor_spinner_dropdown_text">%s (%d)</string>
+    <string name="supervisor_spinner_view_text">##%s##\n@@%s@@</string>
+    <string-array name="time_entry_supervisor_tabs">
+        <item>Needs Approval</item>
+        <item>Approved</item>
+    </string-array>
+    <string name="no_employee_information_found_text">There are no records in this pay group.</string>
+    <string name="error_retrieving_info_text">There was an error retrieving the information.</string>
+    <string name="name_header_text">Name</string>
+    <string name="employee_approved_header_text">Employee\nApproved</string>
+    <string name="total_header_text">Total</string>
+    <string name="approve_button_text">Approve</string>
+    <string name="unapprove_button_text">Unapprove</string>
+    <string name="loading_x_out_of_y_text">Loading employees %d/%d</string>
+    <string name="approving_x_out_of_y_text">Approving employees %d/%d</string>
+    <string name="unapproving_x_out_of_y_text">Unapproving employees %d/%d</string>
+    <string name="approve_time_for_single_text">Approve time for %s?</string>
+    <string name="approve_time_for_multiple_text">Approve %d employees?</string>
+    <string name="unapprove_time_for_single_text">Unapprove time for %s?</string>
+    <string name="unapprove_time_for_multiple_text">Unapprove %d employees?</string>
+    <string name="approval_action_success_result_text">The selected approval updates have been successfully applied.</string>
+    <string name="approval_action_error_result_text">Approvals processing completed, but with errors! Some employees were not updated.</string>
+
+    <!--About-->
+    <string name="title_activity_about">About</string>
+
+    <!-- Dialogs -->
+    <string name="yes_btn_text">YES</string>
+    <string name="no_btn_text">NO</string>
+
+    <!-- OnTrak specific -->
+    <string name="action_submit_text">SUBMIT</string>
+    <string name="prompt_code_hint_text">Enter code</string>
+    <string name="onboard_heading_text">Time &amp; Attendance Unique Code:</string>
+    <string name="onboard_help_text">Need help?</string>
+    <string name="need_help_dialog_title">Onboarding Help</string>
+    <string name="onboard_instruction_text">Please enter the unique code generated in your Time and Attendance system. Once the code is entered and submitted, you will be able to access the OnTrak Application.</string>
+    <string name="close_btn_text">Close</string>
+
+    <string name="submitting_status_text">Submitting code&#8230;</string>
+    <string name="loading_session_status_text">Loading session&#8230;</string>
+    <string name="loading_punch_data_text">Loading punch data&#8230;</string>
+    <string name="empty_code_error_text">Please enter an onboarding code.</string>
+
+    <string name="drawer_dashboard_title">Dashboard</string>
+    <string name="drawer_punch_title">Time Punch</string>
+    <string name="drawer_pto_approvals_title">Time Off Approval</string>
+    <string name="drawer_time_off_title">Time Off Request</string>
+    <string name="drawer_time_entry_title">Timesheet</string>
+    <string name="drawer_time_management_title">Time Management</string>
+    <string name="drawer_about_title">@string/title_activity_about</string>
+    <string name="dashboard_no_content_text">Nothing to show</string>
+
+    <string name="time_clock_text">TIME CLOCK</string>
+    <string name="punch_recent_activity_text">RECENT ACTIVITY</string>
+    <string name="time_off_approval_text">TIME OFF APPROVAL</string>
+    <string name="time_off_balance_text">PTO/VACATION BALANCE</string>
+    <string name="time_off_request_status_text">TIME OFF REQUEST STATUS</string>
+    <string name="request_hours_text">hours</string>
+    <string name="time_off_approval_no_requests">You currently have no pending requests.</string>
+    <string name="time_off_approval_pending_requests_text">You have ##%d## pending requests.</string>
+    <string name="time_off_approval_pending_request_text">You have ##%d## pending request.</string>
+
+    <!--About-->
+    <string name="about_app_title_text">OnTrak</string>
+
+</resources>

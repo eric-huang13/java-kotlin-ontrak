@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activity.PunchActivity">
+
+    <RelativeLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/punch_fragment"
+            android:name="com.insperity.escmobile.view.fragment.PunchFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_punch"/>
+    </RelativeLayout>
+
+    <include layout="@layout/nav_drawer"/>
+</android.support.v4.widget.DrawerLayout>

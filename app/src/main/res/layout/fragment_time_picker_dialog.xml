@@ -1,0 +1,23 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="@dimen/full_margin"
+    android:paddingTop="@dimen/full_margin"
+    tools:context="com.insperity.escmobile.view.fragment.TimePickerDialogFragment">
+
+    <NumberPicker
+        android:id="@+id/firstPicker"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"/>
+
+    <NumberPicker
+        android:id="@+id/secondPicker"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/double_full_margin"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/full_margin"
+    android:paddingTop="@dimen/full_margin">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_off_request_dates_hint_text"
+        android:textColor="@color/insperity_green"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintLeft_toLeftOf="@+id/relativeLayout"
+        app:layout_constraintRight_toRightOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="270dp"
+        android:layout_height="305dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/half_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.squareup.timessquare.CalendarPickerView
+            android:id="@+id/calendarPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="none"
+            app:tsquare_dayBackground="@color/white"
+            app:tsquare_dividerColor="@color/white"
+            app:tsquare_headerTextColor="@color/button_grey_light"
+            app:tsquare_titleTextColor="@color/button_grey_light"/>
+
+        <Button
+            android:id="@+id/previousMonthButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_chevron_left_black_18dp"
+            android:paddingTop="14dp"/>
+
+        <Button
+            android:id="@+id/nextMonthButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_chevron_right_black_18dp"
+            android:paddingTop="14dp"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.insperity.escmobile.view.widget.EndlessLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginEnd="@dimen/full_margin"
+        android:layout_marginStart="@dimen/half_margin">
+
+        <FrameLayout
+            android:id="@+id/checkboxContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/approveCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/rounded_checkbox_bg"/>
+
+            <ImageView
+                android:id="@+id/statusImage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/quarter_margin"
+                android:src="@drawable/ic_check"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/nameContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/half_margin"
+                android:maxLines="2"
+                android:textColor="@color/text_link"
+                tools:text="Lane, Caderius D"/>
+
+            <TextView
+                android:id="@+id/numberText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/half_margin"
+                android:textColor="@color/text_grey_light"
+                android:textSize="@dimen/text_small"
+                tools:text="(1846346)"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/empAppText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/insperity_green"
+            tools:text="YES"/>
+
+        <TextView
+            android:id="@+id/hoursText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            tools:text="14.0000"/>
+
+        <TextView
+            android:id="@+id/dollarsText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            tools:text="14.23"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_grey"/>
+</com.insperity.escmobile.view.widget.EndlessLinearLayout>

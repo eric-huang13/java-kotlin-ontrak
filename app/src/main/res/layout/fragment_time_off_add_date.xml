@@ -1,0 +1,149 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:context="com.insperity.escmobile.view.fragment.TimeOffAddDateFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/half_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/half_margin">
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="283dp"
+            android:layout_gravity="center_horizontal">
+
+            <com.squareup.timessquare.CalendarPickerView
+                android:id="@+id/calendarPicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/quarter_margin"
+                android:scrollbars="none"
+                app:tsquare_dayBackground="@color/white"
+                app:tsquare_dividerColor="@color/white"
+                app:tsquare_headerTextColor="@color/button_grey_light"
+                app:tsquare_titleTextColor="@color/button_grey_light" />
+
+            <Button
+                android:id="@+id/previousMonthButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableTop="@drawable/ic_chevron_left_black_18dp"
+                android:paddingTop="14dp" />
+
+            <Button
+                android:id="@+id/nextMonthButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableTop="@drawable/ic_chevron_right_black_18dp"
+                android:paddingTop="14dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="true"
+            android:gravity="center_vertical"
+            android:minHeight="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:text="@string/time_off_hours_per_day_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hoursText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/editTextBackground"
+                android:focusable="false"
+                android:textSize="12sp"
+                tools:text="8 Hrs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/time_off_pay_type"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/payTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/schedulingContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="35dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/time_off_schedule_text"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/scheduleSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/startTimeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="35dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:text="@string/time_off_start_time_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/startTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/editTextBackground"
+                android:clickable="true"
+                android:focusable="false"
+                android:textSize="12sp"
+                tools:text="9:00 AM" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

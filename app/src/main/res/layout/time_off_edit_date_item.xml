@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/commonListItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_swipe_item_neutral">
+
+    <LinearLayout
+        android:id="@+id/dateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_bottom_border_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/half_margin"
+        android:paddingStart="@dimen/half_margin">
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/full_margin"
+            android:layout_marginTop="@dimen/full_margin"
+            android:layout_weight=".2"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"
+            tools:text="02/04/2017"/>
+
+        <TextView
+            android:id="@+id/hoursText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".28"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"
+            tools:text="12h 30m(67.5)"/>
+
+        <Spinner
+            android:id="@+id/payTypeSpinner"
+            style="@style/AppTheme.InlineSpinnerStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".28"/>
+
+        <LinearLayout
+            android:id="@+id/schedulingContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".24"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/schedulingSpinner"
+                style="@style/AppTheme.InlineSpinnerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/startTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/half_margin"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_small"
+                android:visibility="gone"
+                tools:text="12:30 AM"
+                tools:visibility="visible"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

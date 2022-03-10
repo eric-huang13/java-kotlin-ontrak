@@ -1,0 +1,12 @@
+<resources>>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="commonListItemStyle">
+        <item name="android:elevation">2dp</item>
+        <item name="android:outlineProvider">bounds</item>
+    </style>
+</resources>

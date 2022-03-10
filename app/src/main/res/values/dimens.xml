@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="double_full_margin">32dp</dimen>
+    <dimen name="full_and_half_margin">24dp</dimen>
+    <dimen name="full_margin">16dp</dimen>
+    <dimen name="half_margin">8dp</dimen>
+    <dimen name="quarter_margin">4dp</dimen>
+
+    <dimen name="text_xxxlarge">48sp</dimen>
+    <dimen name="text_xxlarge">24sp</dimen>
+    <dimen name="text_xlarge">18sp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_normal">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_tiny">10sp</dimen>
+
+    <dimen name="drawer_width">300dp</dimen>
+    <dimen name="pay_period_popup_width">250dp</dimen>
+
+    <dimen name="buttons_radio">4dp</dimen>
+
+    <!-- Z-axis elevations -->
+    <dimen name="z_app_bar">4dp</dimen>
+    <dimen name="z_card">2dp</dimen>
+    <dimen name="z_fab">6dp</dimen>
+    <dimen name="touch_raise">6dp</dimen>
+    <dimen name="touched_app_bar">8dp</dimen>
+    <dimen name="z_fab_over_touchable_app_bar">9dp</dimen>
+    <dimen name="z_drawer">16dp</dimen>
+    <dimen name="z_dialog">24dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="form_field_left_margin">54dp</dimen>
+
+    <dimen name="calendar_month_topmargin">6dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">14dp</dimen>
+
+    <!--TimeReview-->
+    <dimen name="card_totals_text_size">22sp</dimen>
+
+    <dimen name="sup_list_checkbox_width">42dp</dimen>
+    <dimen name="sup_list_name_header_width">160dp</dimen>
+    <dimen name="sup_list_name_item_width">180dp</dimen>
+    <dimen name="sup_list_emp_app_header_width">75dp</dimen>
+    <dimen name="sup_list_emp_app_item_width">35dp</dimen>
+    <dimen name="sup_list_total_header_width">65dp</dimen>
+    <dimen name="sup_list_total_item_width">85dp</dimen>
+    <dimen name="sup_list_dollars_width">85dp</dimen>
+    <dimen name="sup_list_zero_width">0dp</dimen>
+    <dimen name="right_aligned_extra_margin">15dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/punchContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp">
+
+    <View
+        android:id="@+id/statusColorContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/half_margin"
+        android:layout_marginEnd="@dimen/full_margin"
+        android:layout_marginStart="@dimen/full_margin"
+        android:layout_marginTop="@dimen/half_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/punch_not_synced_container_bg"/>
+
+    <View
+        android:id="@+id/upperLine"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/categoryCircleIndicator"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".5"
+        android:background="@color/stroke_grey"
+        app:layout_constraintBottom_toTopOf="@+id/categoryCircleIndicator"
+        app:layout_constraintEnd_toEndOf="@+id/categoryCircleIndicator"
+        app:layout_constraintStart_toStartOf="@+id/categoryCircleIndicator"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/categoryCircleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_punch_green_circle"/>
+
+    <View
+        android:id="@+id/lowerLine"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/stroke_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/categoryCircleIndicator"
+        app:layout_constraintStart_toStartOf="@+id/categoryCircleIndicator"
+        app:layout_constraintTop_toBottomOf="@+id/categoryCircleIndicator"/>
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/text_black"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryCircleIndicator"
+        app:layout_constraintStart_toEndOf="@+id/categoryCircleIndicator"
+        app:layout_constraintTop_toTopOf="@+id/categoryCircleIndicator"
+        tools:text="12:00 AM"/>
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/double_full_margin"
+        android:layout_toEndOf="@+id/timeText"
+        android:textColor="@color/text_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/timeText"
+        app:layout_constraintEnd_toStartOf="@+id/statusImage"
+        app:layout_constraintStart_toEndOf="@+id/timeText"
+        app:layout_constraintTop_toTopOf="@+id/timeText"
+        tools:text="Transfer"/>
+
+    <ImageView
+        android:id="@+id/statusImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/full_and_half_margin"
+        android:adjustViewBounds="true"
+        android:maxHeight="18dp"
+        android:maxWidth="18dp"
+        android:minHeight="18dp"
+        android:minWidth="18dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/titleText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleText"
+        tools:src="@drawable/ic_punch_not_synced"/>
+
+    <LinearLayout
+        android:id="@+id/punchDetailsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/full_margin"
+        android:layout_marginTop="@dimen/half_margin"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/statusImage"
+        app:layout_constraintStart_toStartOf="@+id/timeText"
+        app:layout_constraintTop_toBottomOf="@+id/timeText"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.TimeEntryEmployeeListFragment">
+
+    <include layout="@layout/widget_footnote"/>
+
+    <LinearLayout
+        android:id="@+id/listContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/approvalActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="@dimen/half_margin"
+            android:layout_marginEnd="@dimen/full_margin"
+            android:layout_marginStart="@dimen/full_margin"
+            android:layout_marginTop="@dimen/half_margin"
+            android:background="@drawable/button_orange"
+            android:enabled="false"
+            android:textColor="@color/text_white"
+            tools:text="@string/approve_button_text"/>
+
+        <include layout="@layout/view_time_entry_employee_header"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</FrameLayout>
+

@@ -1,0 +1,3 @@
+package com.insperity.escmobile.event
+
+class OnApprovalTimeEntrySuccessful
