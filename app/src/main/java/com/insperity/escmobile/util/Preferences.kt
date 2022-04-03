@@ -14,9 +14,9 @@ class Preferences @Inject constructor(context: Context) : MainPreferences(contex
 
     companion object {
         private const val SESSION_EMPLOYEE_ID = "SESSION_EMPLOYEE_ID"
-        private const val TIME_OFF_APPROVAL_ENABLED_PREF = "com.insperity.ontrak.TIME_OFF_APPROVAL_ENABLED_PREF"
-        private const val TIME_ENTRY_ENABLED_PREF = "com.insperity.ontrak.TIME_ENTRY_ENABLED_PREF"
-        private const val TIME_MANAGEMENT_ENABLED_PREF = "com.insperity.ontrak.TIME_MANAGEMENT_ENABLED_PREF"
+        private const val TIME_OFF_APPROVAL_ENABLED_PREF = "com.insperity.escmobile.TIME_OFF_APPROVAL_ENABLED_PREF"
+        private const val TIME_ENTRY_ENABLED_PREF = "com.insperity.escmobile.TIME_ENTRY_ENABLED_PREF"
+        private const val TIME_MANAGEMENT_ENABLED_PREF = "com.insperity.escmobile.TIME_MANAGEMENT_ENABLED_PREF"
     }
 
     override var timeStarToken: String

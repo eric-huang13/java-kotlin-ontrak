@@ -5,8 +5,8 @@ import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -179,7 +179,7 @@ public class WebFragment extends BaseFragment {
     }
 
     protected void loadData(String htmlContent) {
-        webView.loadData(htmlContent, "text/html", Util.UTF_8.name());
+        webView.loadData(htmlContent, "text/html", "utf-8");
     }
 
     protected void loadUrl(String url) {

@@ -1,7 +1,7 @@
 package com.insperity.escmobile.view.fragment
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 
 import com.insperity.escmobile.App
 import com.insperity.escmobile.R

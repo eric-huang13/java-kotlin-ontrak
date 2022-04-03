@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.insperity.escmobile.view.fragment.PunchWidgetFragment">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/widgetContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -151,5 +151,5 @@
                 android:text="@string/punch_no_recent_hint_text"
                 tools:visibility="gone"/>
         </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </FrameLayout>

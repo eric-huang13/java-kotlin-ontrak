@@ -1,7 +1,7 @@
 package com.insperity.escmobile.net.gson;
 
 import android.annotation.SuppressLint;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.crashlytics.android.Crashlytics;
 

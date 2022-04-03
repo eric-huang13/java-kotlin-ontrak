@@ -3,9 +3,9 @@ package com.insperity.escmobile.view.activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentStatePagerAdapter
-import android.support.v4.view.ViewPager
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentStatePagerAdapter
+import androidx.viewpager.widget.ViewPager
 import com.google.firebase.analytics.FirebaseAnalytics.Event.VIEW_ITEM
 import com.google.firebase.analytics.FirebaseAnalytics.Param.ITEM_NAME
 import com.insperity.escmobile.R

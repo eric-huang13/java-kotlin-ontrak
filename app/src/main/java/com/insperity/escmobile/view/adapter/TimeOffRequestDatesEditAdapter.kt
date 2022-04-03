@@ -1,10 +1,10 @@
 package com.insperity.escmobile.view.adapter
 
 import android.content.Context
-import android.support.v4.app.FragmentManager
-import android.support.v4.content.ContextCompat
-import android.support.v4.util.LongSparseArray
-import android.support.v7.widget.RecyclerView
+import androidx.fragment.app.FragmentManager
+import androidx.core.content.ContextCompat
+import androidx.collection.LongSparseArray
+import androidx.recyclerview.widget.RecyclerView
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
@@ -170,7 +170,7 @@ open class TimeOffRequestDatesEditAdapter internal constructor(protected var con
         holder.itemView.payTypeSpinner.adapter = adapter
         holder.itemView.payTypeSpinner.onItemSelectedListener = null
         for (i in 0 until adapter.count) {
-            if (adapter.getItem(i).value == requestDate.payType) {
+            if (adapter.getItem(i)?.value == requestDate.payType) {
                 holder.itemView.payTypeSpinner.setSelection(i, true)
                 break
             }
@@ -198,7 +198,7 @@ open class TimeOffRequestDatesEditAdapter internal constructor(protected var con
         holder.itemView.schedulingSpinner.adapter = adapter
         holder.itemView.schedulingSpinner.onItemSelectedListener = null
         for (i in 0 until adapter.count) {
-            if (adapter.getItem(i).value == requestDate.scheduling.toString()) {
+            if (adapter.getItem(i)?.value == requestDate.scheduling.toString()) {
                 holder.itemView.schedulingSpinner.setSelection(i, true)
                 break
             }

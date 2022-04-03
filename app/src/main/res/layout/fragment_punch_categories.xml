@@ -11,7 +11,7 @@
 
     <include layout="@layout/widget_footnote"/>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/punchContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             app:layout_constraintTop_toTopOf="@+id/defaultOrgLevelSwitch"
             tools:visibility="visible"/>
 
-        <android.support.v7.widget.SwitchCompat
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/defaultOrgLevelSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,5 +109,5 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -1,7 +1,7 @@
 package com.insperity.escmobile.view.widget
 
 import android.content.Context
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.widget.LinearLayout
@@ -98,7 +98,7 @@ class PunchOrgLevelView(context: Context, attrs: AttributeSet) : LinearLayout(co
         this.isMainDefault = isMainDefault
         if (orgDefault != null) {
             for (i in 0 until adapter.count) {
-                if (adapter.getItem(i).id == orgDefault.orgItemId) {
+                if (adapter.getItem(i)?.id == orgDefault.orgItemId) {
                     setOrgItemsSpinnerSelection(i)
                     return
                 }
@@ -108,7 +108,7 @@ class PunchOrgLevelView(context: Context, attrs: AttributeSet) : LinearLayout(co
     }
 
     private fun getNAItemPosition(): Int {
-        val onlyNA = adapter.count == 1 && adapter.getItem(0).id == 0L
+        val onlyNA = adapter.count == 1 && adapter.getItem(0)?.id == 0L
         return if (onlyNA) 0 else adapter.count
     }
 

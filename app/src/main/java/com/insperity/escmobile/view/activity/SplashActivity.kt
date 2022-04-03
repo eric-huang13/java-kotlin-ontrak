@@ -2,7 +2,7 @@ package com.insperity.escmobile.view.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.insperity.escmobile.App
 import com.insperity.escmobile.R
 import com.insperity.escmobile.action.creators.SessionActionsCreator

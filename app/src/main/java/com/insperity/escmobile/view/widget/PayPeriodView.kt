@@ -1,7 +1,7 @@
 package com.insperity.escmobile.view.widget
 
 import android.content.Context
-import android.support.v7.widget.ListPopupWindow
+import androidx.appcompat.widget.ListPopupWindow
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View

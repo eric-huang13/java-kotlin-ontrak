@@ -68,12 +68,12 @@ class TimeOffAddDateFragment : BaseFragment() {
         super.onStop()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater?.inflate(R.menu.menu_timeoff_add_date, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item?.itemId == R.id.action_add_dates) {
             onDatesSelected()
         }
@@ -98,12 +98,12 @@ class TimeOffAddDateFragment : BaseFragment() {
         setHoursText(requestMeta.defaultMinutesPayDay)
         setStartTimeText(requestMeta.startTimeMinutes)
 
-        val payTypeAdapter = ArrayAdapter<ITAReferenceAttr>(context, R.layout.spinner_textview, requestMeta.payTypesList)
+        val payTypeAdapter = ArrayAdapter<ITAReferenceAttr>(requireContext(), R.layout.spinner_textview, requestMeta.payTypesList)
         payTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         payTypeSpinner.adapter = payTypeAdapter
         payTypeSpinner.setSelection(requestMeta.defaultPayTypeSelection, true)
 
-        val scheduleAdapter = ArrayAdapter<ITAReferenceAttr>(context, R.layout.spinner_textview, requestMeta.schedulingList)
+        val scheduleAdapter = ArrayAdapter<ITAReferenceAttr>(requireContext(), R.layout.spinner_textview, requestMeta.schedulingList)
         scheduleAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         scheduleSpinner.adapter = scheduleAdapter
         if (!requestMeta.canSchedule) return
@@ -119,9 +119,11 @@ class TimeOffAddDateFragment : BaseFragment() {
 
     private fun setupListeners() {
         hoursText.setOnClickListener { _ ->
-            TimePickerDialogFragment.newInstance(incrementMinutes = requestMeta.incrementMinutes, preselectedMinutes = minutesPerDay)
+            fragmentManager?.let {
+                TimePickerDialogFragment.newInstance(incrementMinutes = requestMeta.incrementMinutes, preselectedMinutes = minutesPerDay)
                     .setOnTimeValueSetListener { setHoursText(it) }
-                    .show(fragmentManager, TimePickerDialogFragment.TAG)
+                    .show(it, TimePickerDialogFragment.TAG)
+            }
         }
         startTimeText.setOnClickListener {
             RadialTimePickerDialogFragment().setOnTimeSetListener { _, hourOfDay, minute -> setStartTimeText(hourOfDay * 60 + minute) }

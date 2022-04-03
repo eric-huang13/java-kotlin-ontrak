@@ -5,7 +5,7 @@ import android.database.ContentObserver
 import android.os.Handler
 import android.os.SystemClock
 import android.provider.Settings
-import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
 import android.text.format.DateFormat
 import android.util.AttributeSet
 import android.view.LayoutInflater

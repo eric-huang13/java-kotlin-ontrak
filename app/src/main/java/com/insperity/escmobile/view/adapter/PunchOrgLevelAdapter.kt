@@ -15,14 +15,14 @@ class PunchOrgLevelAdapter(context: Context, val orgItems: List<OrgItemEntity>) 
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val textView = super.getView(position, convertView, parent) as TextView
-        textView.text = getItem(position).label
+        textView.text = getItem(position)?.label
         return textView
     }
 
     override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
         val textView = super.getDropDownView(position, convertView, parent) as TextView
         textView.visibility = if (position == count) View.GONE else View.VISIBLE
-        textView.text = getItem(position).label
+        textView.text = getItem(position)?.label
         return textView
     }
 

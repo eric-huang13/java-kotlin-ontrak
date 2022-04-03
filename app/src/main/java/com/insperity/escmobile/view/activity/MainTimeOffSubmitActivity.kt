@@ -3,8 +3,8 @@ package com.insperity.escmobile.view.activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentTransaction
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.avast.android.dialogs.fragment.SimpleDialogFragment
 import com.avast.android.dialogs.iface.ISimpleDialogListener
 import com.insperity.escmobile.R

@@ -1,9 +1,9 @@
 package com.insperity.escmobile.view.fragment
 
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.*
 import android.view.inputmethod.InputMethodManager
 import com.h6ah4i.android.widget.advrecyclerview.animator.SwipeDismissItemAnimator
@@ -90,7 +90,7 @@ class TimeOffSubmitFragment : BaseFragment() {
         super.onDestroyView()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater) {
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_timeoff_submit, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
@@ -121,7 +121,12 @@ class TimeOffSubmitFragment : BaseFragment() {
                 touchActionGuardManager?.isEnabled = true
                 swipeManager = RecyclerViewSwipeManager()
                 wrappedAdapter = swipeManager?.createWrappedAdapter(it)
-                recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+                recyclerView.layoutManager =
+                    LinearLayoutManager(
+                        context,
+                        LinearLayoutManager.VERTICAL,
+                        false
+                    )
                 recyclerView.adapter = wrappedAdapter
                 val animator = SwipeDismissItemAnimator()
                 animator.supportsChangeAnimations = false

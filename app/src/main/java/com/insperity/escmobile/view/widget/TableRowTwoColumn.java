@@ -1,7 +1,7 @@
 package com.insperity.escmobile.view.widget;
 
 import android.content.Context;
-import android.support.annotation.DrawableRes;
+import androidx.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.TableRow;

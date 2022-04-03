@@ -2,12 +2,12 @@ package com.insperity.escmobile.view.activity
 
 import android.graphics.Typeface
 import android.os.Bundle
-import android.support.annotation.LayoutRes
-import android.support.v4.content.ContextCompat
-import android.support.v4.view.GravityCompat
-import android.support.v4.widget.DrawerLayout
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.graphics.drawable.DrawerArrowDrawable
+import androidx.annotation.LayoutRes
+import androidx.core.content.ContextCompat
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.graphics.drawable.DrawerArrowDrawable
 import android.view.View
 import android.view.View.GONE
 import android.view.View.VISIBLE

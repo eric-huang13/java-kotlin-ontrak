@@ -5,10 +5,10 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.design.widget.TabLayout
-import android.support.v4.app.FragmentStatePagerAdapter
-import android.support.v4.content.ContextCompat
+import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.tabs.TabLayout
+import androidx.fragment.app.FragmentStatePagerAdapter
+import androidx.core.content.ContextCompat
 import android.text.style.RelativeSizeSpan
 import android.text.style.StyleSpan
 import android.view.LayoutInflater
@@ -107,7 +107,7 @@ abstract class MainTimeEntrySupervisorActivity : BaseActivity() {
         val adapter = object : ArrayAdapter<TimeEntryPayGroup>(baseContext, android.R.layout.simple_list_item_1, event.payGroups) {
             override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
                 val textView = super.getView(position, convertView, parent) as TextView
-                val text = setSpanBetweenTokens(getString(R.string.supervisor_spinner_view_text, getItem(position).name, getItem(position).formattedPayPeriod), "##", StyleSpan(Typeface.BOLD))
+                val text = setSpanBetweenTokens(getString(R.string.supervisor_spinner_view_text, getItem(position)?.name, getItem(position)?.formattedPayPeriod), "##", StyleSpan(Typeface.BOLD))
                 textView.text = setSpanBetweenTokens(text, "@@", RelativeSizeSpan(.86f))
                 textView.setTextColor(ContextCompat.getColor(baseContext, R.color.text_white))
                 return textView
@@ -115,7 +115,7 @@ abstract class MainTimeEntrySupervisorActivity : BaseActivity() {
 
             override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
                 val textView = super.getDropDownView(position, convertView, parent) as TextView
-                textView.text = getString(R.string.supervisor_spinner_dropdown_text, getItem(position).name, getItem(position).employees.size)
+                textView.text = getString(R.string.supervisor_spinner_dropdown_text, getItem(position)?.name, getItem(position)?.employees?.size)
                 return textView
             }
         }

@@ -2,7 +2,7 @@ package com.insperity.escmobile.view.fragment;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,13 +27,9 @@ import butterknife.ButterKnife;
 
 public class AboutFragment extends BaseFragment {
 
-    @Inject
     EventBus bus;
-    @Inject
     LegalActionsCreator actionsCreator;
-    @Inject
     LegalStore store;
-    @Inject
     AppUtil appUtil;
 
     @BindView(R.id.version_text)
@@ -42,16 +38,15 @@ public class AboutFragment extends BaseFragment {
     @BindView(R.id.list)
     ListView listView;
 
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_about, container, false);
         ButterKnife.bind(this, view);
         return view;
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getComponent().inject(this);
         version.setText(appUtil.getVersionInfoFull());

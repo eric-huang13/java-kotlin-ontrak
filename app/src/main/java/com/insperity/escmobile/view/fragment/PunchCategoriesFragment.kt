@@ -2,9 +2,9 @@ package com.insperity.escmobile.view.fragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.support.constraint.ConstraintSet
-import android.support.transition.TransitionManager
-import android.support.v4.content.ContextCompat
+import androidx.constraintlayout.widget.ConstraintSet
+import androidx.transition.TransitionManager
+import androidx.core.content.ContextCompat
 import android.util.SparseIntArray
 import android.view.LayoutInflater
 import android.view.View
@@ -135,21 +135,21 @@ class PunchCategoriesFragment : BaseFragment() {
     }
 
     private fun setupPunchCategoriesSpinner(punchCategories: List<PunchCategoryEntity>, selectHintItem: Boolean = true) {
-        val categoryAdapter = object : ArrayAdapter<PunchCategoryEntity>(context, android.R.layout.simple_spinner_item, punchCategories) {
-            override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-                val textView = super.getView(position, convertView, parent) as TextView
-                textView.text = getItem(position).description
+        val categoryAdapter = object : ArrayAdapter<PunchCategoryEntity>(requireContext(), android.R.layout.simple_spinner_item, punchCategories) {
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val textView = parent?.let { super.getView(position, convertView, it) } as TextView
+                textView.text = getItem(position)?.description
                 textView.setTextColor(ContextCompat.getColor(context, if (position == count) R.color.text_grey_light else R.color.text_black))
                 return textView
             }
 
             override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup?): View {
                 val textView = super.getDropDownView(position, convertView, parent) as TextView
-                textView.text = getItem(position).description
+                textView.text = getItem(position)?.description
                 return textView
             }
 
-            override fun getItem(position: Int): PunchCategoryEntity {
+            override fun getItem(position: Int): PunchCategoryEntity? {
                 if (position == count) {
                     val punchCategory = PunchCategoryEntity()
                     punchCategory.id = FAKE_HINT_PUNCH_CATEGORY_ID

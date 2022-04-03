@@ -1,1 +1,39 @@
-{}
+{
+    "project_info": {
+      "project_number": "561309593531",
+      "project_id": "mytimestar-mobile-app",
+      "storage_bucket": "mytimestar-mobile-app.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:561309593531:android:a6c24b8357241f96c4de9e",
+          "android_client_info": {
+            "package_name": "com.insperity.escmobile"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "561309593531-dli47l691ndoiu6rpt80hm9ebnvq9uu8.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyDaAN03vUqQ_U_q7Eiq_DhQfcnWNGVYkJ8"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "561309593531-dli47l691ndoiu6rpt80hm9ebnvq9uu8.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }

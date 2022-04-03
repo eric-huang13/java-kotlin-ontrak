@@ -62,7 +62,7 @@ class TimeOffRequestsFragment : BaseFragment() {
         super.onStop()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater) {
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         if (adapter != null) {
             inflater.inflate(R.menu.menu_timeoff_add, menu)
         }

@@ -3,12 +3,13 @@ package com.insperity.escmobile.view.activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.view.View.VISIBLE
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
+import androidx.fragment.app.DialogFragment
 import com.avast.android.dialogs.fragment.SimpleDialogFragment
 import com.insperity.escmobile.App
 import com.insperity.escmobile.R
@@ -62,11 +63,11 @@ class OnboardingActivity : AppCompatActivity() {
     }
 
     fun onNeedHelpTextClicked(v: View) {
-        SimpleDialogFragment.createBuilder(this, supportFragmentManager)
-                .setTitle(R.string.need_help_dialog_title)
-                .setMessage(R.string.onboard_instruction_text)
-                .setPositiveButtonText(R.string.close_btn_text)
-                .show()
+//        SimpleDialogFragment.createBuilder(this, supportFragmentManager)
+//                .setTitle(R.string.need_help_dialog_title)
+//                .setMessage(R.string.onboard_instruction_text)
+//                .setPositiveButtonText(R.string.close_btn_text)
+//                .show() ?????
     }
 
     fun onSubmitButtonClicked(v: View) {
