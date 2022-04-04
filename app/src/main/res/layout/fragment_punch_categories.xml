@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:paddingTop="@dimen/half_margin"
-    tools:context="com.insperity.escmobile.view.fragment.PunchCategoriesFragment">
+    tools:context="com.delphiaconsulting.timestar.view.fragment.PunchCategoriesFragment">
 
     <include layout="@layout/widget_footnote"/>
 

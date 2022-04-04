@@ -51,7 +51,7 @@
 -keepattributes Signature
 -keep class sun.misc.Unsafe { *; }
 -dontwarn sun.misc.Unsafe
--keep class com.insperity.escmobile.net.gson.** { *; }
+-keep class com.delphiaconsulting.timestar.net.gson.** { *; }
 -keep class * implements com.google.gson.TypeAdapterFactory
 -keep class * implements com.google.gson.JsonSerializer
 -keep class * implements com.google.gson.JsonDeserializer

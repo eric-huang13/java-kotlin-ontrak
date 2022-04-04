@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.insperity.escmobile.view.fragment.PunchWidgetFragment">
+    tools:context="com.delphiaconsulting.timestar.view.fragment.PunchWidgetFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/widgetContainer"
@@ -54,7 +54,7 @@
                     android:layout_gravity="center"
                     android:orientation="vertical">
 
-                    <com.insperity.escmobile.view.widget.ClockView
+                    <com.delphiaconsulting.timestar.view.widget.ClockView
                         android:id="@+id/digitalClock"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>

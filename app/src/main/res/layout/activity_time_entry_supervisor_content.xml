@@ -38,7 +38,7 @@
                 app:tabTextColor="@color/white70pc"/>
         </com.google.android.material.appbar.AppBarLayout>
 
-        <com.insperity.escmobile.view.widget.NoSwipeViewPager
+        <com.delphiaconsulting.timestar.view.widget.NoSwipeViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

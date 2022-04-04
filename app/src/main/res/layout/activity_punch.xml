@@ -17,7 +17,7 @@
 
         <fragment
             android:id="@+id/punch_fragment"
-            android:name="com.insperity.escmobile.view.fragment.PunchFragment"
+            android:name="com.delphiaconsulting.timestar.view.fragment.PunchFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout="@layout/fragment_punch"/>

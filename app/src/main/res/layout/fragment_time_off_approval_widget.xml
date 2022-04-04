@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    tools:context="com.insperity.escmobile.view.fragment.TimeOffRequestWidgetFragment">
+    tools:context="com.delphiaconsulting.timestar.view.fragment.TimeOffRequestWidgetFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/widgetContainer"

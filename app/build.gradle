@@ -13,12 +13,24 @@ android {
     flavorDimensions "default"
 
     defaultConfig {
-        applicationId "com.insperity.escmobile"
+        applicationId "com.delphiaconsulting.timestar"
         minSdkVersion 20
         targetSdkVersion 29
         multiDexEnabled true
         versionCode 6
         versionName "1.2.1"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
     }
 
     signingConfigs {
@@ -46,7 +58,7 @@ android {
             buildConfigField "String", "LEGAL_ENDPOINT", "\"http://www.insperity.com/service-technology/mobile/legalnotice.html\""
             buildConfigField "String", "FULL_ESC_WEBSITE_URL", "\"https://portal.insperity.com?fromMobile=true\""
             signingConfig signingConfigs.release
-            buildConfigField "String", "ENDPOINT", "\"https://timestar.insperity.com/Hermes/mobile/v2/\""
+            buildConfigField "String", "ENDPOINT", "\"https://mytimestar.com/hermes/mobile/v2/\""
             resValue "string", "flavor_app_name", "OnTrak"
         }
         rc.initWith(buildTypes.release)
@@ -61,7 +73,7 @@ android {
         debug {
             applicationIdSuffix ""
             versionNameSuffix " DEV"
-            buildConfigField "String", "ENDPOINT", "\"http://wdvw3itat01.corporate.administaff.com/Hermes/mobile/v2/\""
+            buildConfigField "String", "ENDPOINT", "\"https://mytimestar.com/hermes/mobile/v2/\""
             resValue "string", "flavor_app_name", "OnTrak DEV"
             FirebasePerformance {
                 instrumentationEnabled false
@@ -77,15 +89,10 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    //noinspection GradleCompatible
     implementation 'androidx.appcompat:appcompat:1.3.1'
-    //noinspection GradleCompatible
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    //noinspection GradleCompatible
     implementation 'com.google.android.material:material:1.4.0'
-    //noinspection GradleCompatible
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
-    //noinspection GradleCompatible
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'

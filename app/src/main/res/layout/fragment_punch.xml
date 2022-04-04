@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.insperity.escmobile.view.fragment.PunchFragment">
+    tools:context="com.delphiaconsulting.timestar.view.fragment.PunchFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -14,7 +14,7 @@
 
         <include layout="@layout/toolbar"/>
 
-        <com.insperity.escmobile.view.widget.ClockView
+        <com.delphiaconsulting.timestar.view.widget.ClockView
             android:id="@+id/clock"
             android:layout_width="match_parent"
             android:layout_height="?android:actionBarSize"
@@ -50,14 +50,14 @@
 
             <fragment
                 android:id="@+id/punch_event_types_fragment"
-                android:name="com.insperity.escmobile.view.fragment.PunchCategoriesFragment"
+                android:name="com.delphiaconsulting.timestar.view.fragment.PunchCategoriesFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_punch_categories"/>
 
             <fragment
                 android:id="@+id/history_fragment"
-                android:name="com.insperity.escmobile.view.fragment.RecentPunchesFragment"
+                android:name="com.delphiaconsulting.timestar.view.fragment.RecentPunchesFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_recent_punches"/>

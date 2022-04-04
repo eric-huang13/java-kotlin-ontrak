@@ -20,7 +20,7 @@
 
         <fragment
             android:id="@+id/time_off_approval_details_fragment"
-            android:name="com.insperity.escmobile.view.fragment.TimeOffApprovalDetailsFragment"
+            android:name="com.delphiaconsulting.timestar.view.fragment.TimeOffApprovalDetailsFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_time_off_approval_details"/>

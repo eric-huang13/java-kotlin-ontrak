@@ -6,7 +6,7 @@
     android:gravity="center"
     android:paddingBottom="@dimen/full_margin"
     android:paddingTop="@dimen/full_margin"
-    tools:context="com.insperity.escmobile.view.fragment.TimePickerDialogFragment">
+    tools:context="com.delphiaconsulting.timestar.view.fragment.TimePickerDialogFragment">
 
     <NumberPicker
         android:id="@+id/firstPicker"

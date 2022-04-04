@@ -165,7 +165,7 @@
                 app:layout_constraintTop_toBottomOf="@id/nameText"
                 tools:text="182895"/>
 
-            <com.insperity.escmobile.view.widget.PayPeriodView
+            <com.delphiaconsulting.timestar.view.widget.PayPeriodView
                 android:id="@+id/payPeriodText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

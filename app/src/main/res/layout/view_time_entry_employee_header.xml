@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.insperity.escmobile.view.widget.EndlessLinearLayout
+<com.delphiaconsulting.timestar.view.widget.EndlessLinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/itemContainer"
     android:layout_width="wrap_content"
@@ -56,4 +56,4 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/background_grey"/>
-</com.insperity.escmobile.view.widget.EndlessLinearLayout>
+</com.delphiaconsulting.timestar.view.widget.EndlessLinearLayout>

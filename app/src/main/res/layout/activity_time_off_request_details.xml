@@ -12,7 +12,7 @@
 
     <fragment
         android:id="@+id/time_off_request_details_fragment"
-        android:name="com.insperity.escmobile.view.fragment.TimeOffRequestDetailsFragment"
+        android:name="com.delphiaconsulting.timestar.view.fragment.TimeOffRequestDetailsFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"

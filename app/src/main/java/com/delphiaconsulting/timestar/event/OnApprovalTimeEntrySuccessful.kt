@@ -1,0 +1,3 @@
+package com.delphiaconsulting.timestar.event
+
+class OnApprovalTimeEntrySuccessful
