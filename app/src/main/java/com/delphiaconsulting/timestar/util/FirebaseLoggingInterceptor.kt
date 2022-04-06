@@ -15,10 +15,10 @@ class FirebaseLoggingInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request()
         val requestTime = System.nanoTime()
-        Crashlytics.log(String.format(Locale.US, "--> Request to URL: %s (%s) -- HEADERS: %n%s", request.url.toString(), request.method.toString(), request.headers.toString()))
+        Crashlytics.log(String.format(Locale.US, "--> Request to URL: %s (%s) -- HEADERS: %n%s", request.url(), request.method(), request.headers()))
         val response = chain.proceed(request)
         val responseTime = System.nanoTime()
-        Crashlytics.log(String.format(Locale.US, "<-- Response for URL: %s (%.1fms) (%d) -- HEADERS: %n%s", response.request.url.toString(), (responseTime - requestTime) / 1e6, response.code.toString(), response.headers.toString()))
+        Crashlytics.log(String.format(Locale.US, "<-- Response for URL: %s (%.1fms) (%d) -- HEADERS: %n%s", response.request().url(), (responseTime - requestTime) / 1e6, response.code(), response.headers()))
         return response
     }
 }

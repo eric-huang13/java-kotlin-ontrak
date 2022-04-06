@@ -63,11 +63,11 @@ class OnboardingActivity : AppCompatActivity() {
     }
 
     fun onNeedHelpTextClicked(v: View) {
-//        SimpleDialogFragment.createBuilder(this, supportFragmentManager)
-//                .setTitle(R.string.need_help_dialog_title)
-//                .setMessage(R.string.onboard_instruction_text)
-//                .setPositiveButtonText(R.string.close_btn_text)
-//                .show() ?????
+        SimpleDialogFragment.createBuilder(this, supportFragmentManager)
+                .setTitle(R.string.need_help_dialog_title)
+                .setMessage(R.string.onboard_instruction_text)
+                .setPositiveButtonText(R.string.close_btn_text)
+                .show()
     }
 
     fun onSubmitButtonClicked(v: View) {

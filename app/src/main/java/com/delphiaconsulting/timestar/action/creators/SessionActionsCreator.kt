@@ -2,6 +2,7 @@ package com.delphiaconsulting.timestar.action.creators
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import com.delphiaconsulting.timestar.action.Actions
 import com.delphiaconsulting.timestar.action.Keys
 import com.delphiaconsulting.timestar.dispatcher.Dispatcher
@@ -34,7 +35,8 @@ class SessionActionsCreator @Inject constructor(dispatcher: Dispatcher, private 
                 getSessionDataAndPunchBaseDataTriggerObservable(TokenUtil.formatItaAuthToken(it.data.token))
             },
             { dispatcher.dispatch(Actions.SESSION_DATA_RECEIVED, Keys.SESSION_DATA, it) },
-            { dispatcher.dispatch(Actions.TOKEN_OR_SESSION_DATA_ERROR, Keys.ERROR, it) })
+            { dispatcher.dispatch(Actions.TOKEN_OR_SESSION_DATA_ERROR, Keys.ERROR, it) }
+    )
 
     private fun getSessionDataAndPunchBaseDataTriggerObservable(token: String) = sessionService.sessionData(token).doOnCompleted { context.startService(Intent(context, PunchDataService::class.java)) }
 }
