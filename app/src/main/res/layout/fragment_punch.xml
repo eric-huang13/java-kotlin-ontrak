@@ -25,7 +25,7 @@
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="?android:actionBarSize"
-            android:background="@color/insperity_blue_deep"
+            android:background="@color/punch_background"
             android:foregroundGravity="fill_horizontal"
             android:visibility="gone"
             app:tabGravity="fill"
