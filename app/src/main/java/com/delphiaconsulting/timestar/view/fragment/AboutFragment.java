@@ -27,9 +27,13 @@ import butterknife.ButterKnife;
 
 public class AboutFragment extends BaseFragment {
 
+    @Inject
     EventBus bus;
+    @Inject
     LegalActionsCreator actionsCreator;
+    @Inject
     LegalStore store;
+    @Inject
     AppUtil appUtil;
 
     @BindView(R.id.version_text)
@@ -41,6 +45,7 @@ public class AboutFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_about, container, false);
+        //View view = getActivity().findViewById(R.layout.fragment_about)
         ButterKnife.bind(this, view);
         return view;
     }

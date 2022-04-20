@@ -52,7 +52,7 @@ open class MainPunchStoreImpl(dispatcher: Dispatcher, bus: EventBus, protected v
     protected open val orgLevelSelectionEntityDao: OrgLevelSelectionEntityDao
         get() = daoSession.orgLevelSelectionEntityDao
 
-    @Suppress("UNCHECKED_CAST")
+    //@Suppress("UNCHECKED_CAST")
     override fun onActionReceived(action: Action) {
         when (action.type) {
             Actions.PUNCH_SYNC_DATA_RECEIVED -> {

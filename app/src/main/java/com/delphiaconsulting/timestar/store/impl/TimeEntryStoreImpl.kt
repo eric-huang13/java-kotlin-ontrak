@@ -37,7 +37,7 @@ class TimeEntryStoreImpl(dispatcher: Dispatcher, bus: EventBus, val context: Con
     override val onEmployeeLoadingProgressUpdateSubject: PublishSubject<OnEmployeeLoadingProgressUpdate> = PublishSubject.create()
     override val onEmployeeBatchProcessedSubject: PublishSubject<OnEmployeeBatchProcessed> = PublishSubject.create()
 
-    @Suppress("UNCHECKED_CAST")
+    //@Suppress("UNCHECKED_CAST")
     override fun onActionReceived(action: Action) {
         when (action.type) {
             Actions.TIME_ENTRY_PAY_PERIODS_RECEIVED -> {

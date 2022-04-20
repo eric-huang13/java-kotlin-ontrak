@@ -5,7 +5,7 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?android:actionBarSize"
-    android:background="@color/insperity_blue_deep"
+    android:background="@color/punch_background"
     android:elevation="4dp"
     android:outlineProvider="none"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"

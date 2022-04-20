@@ -164,6 +164,15 @@ abstract class BaseActivity : AppCompatActivity(), ISimpleDialogListener {
         if (preferences.timeManagementEnabled) drawerItemList.add(DRAWER_ITEM_TIME_MANAGEMENT)
         if (preferences.timeOffRequestEnabled) drawerItemList.add(DRAWER_ITEM_TIME_OFF)
         if (preferences.timeOffApprovalEnabled) drawerItemList.add(DRAWER_ITEM_PTO_APPROVALS)
+
+        //??????
+//        drawerItemList.add(DRAWER_ITEM_PUNCHES)
+//        drawerItemList.add(DRAWER_ITEM_TIME_ENTRY)
+//        drawerItemList.add(DRAWER_ITEM_TIME_MANAGEMENT)
+//        drawerItemList.add(DRAWER_ITEM_TIME_OFF)
+//        drawerItemList.add(DRAWER_ITEM_PTO_APPROVALS)
+        //??????
+
         drawerItemList.add(DRAWER_ITEM_SEPARATOR)
         drawerItemList.add(DRAWER_ITEM_ABOUT)
         createDrawerItems()
@@ -199,10 +208,10 @@ abstract class BaseActivity : AppCompatActivity(), ISimpleDialogListener {
 
     private fun formatDrawerItem(view: View, selected: Boolean) {
         val titleText = view.findViewById<TextView>(R.id.drawerItemTitle)
-        titleText.setTextColor(ContextCompat.getColor(this, if (selected) R.color.insperity_green_light else R.color.text_grey))
+        titleText.setTextColor(ContextCompat.getColor(this, if (selected) R.color.orange_color else R.color.text_grey))
         titleText.setTypeface(titleText.typeface, if (selected) Typeface.BOLD else Typeface.NORMAL)
         val iconView = view.findViewById<ImageView>(R.id.drawerItemIcon)
-        iconView.setColorFilter(ContextCompat.getColor(this, if (selected) R.color.insperity_green_light else R.color.text_grey))
+        iconView.setColorFilter(ContextCompat.getColor(this, if (selected) R.color.orange_color else R.color.text_grey))
     }
 
     private fun onDrawerItemClicked(itemId: Int) {

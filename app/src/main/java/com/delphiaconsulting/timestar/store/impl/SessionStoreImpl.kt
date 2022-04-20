@@ -37,7 +37,7 @@ class SessionStoreImpl(dispatcher: Dispatcher, bus: EventBus, private val prefer
         private const val TIME_MANAGEMENT_KEY = "SUPTIM"
     }
 
-    @Suppress("UNCHECKED_CAST")
+    //@Suppress("UNCHECKED_CAST")
     override fun onActionReceived(action: Action) {
         when (action.type) {
             Actions.AUTH_TOKEN_RECEIVED -> {

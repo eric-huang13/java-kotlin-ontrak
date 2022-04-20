@@ -21,7 +21,7 @@ import javax.inject.Singleton
 @Singleton
 class TimeOffStoreImpl(dispatcher: Dispatcher, bus: EventBus) : MainTimeOffStoreImpl(dispatcher, bus) {
 
-    @Suppress("UNCHECKED_CAST")
+    //@Suppress("UNCHECKED_CAST")
     override fun onActionReceived(action: Action) {
         when (action.type) {
             Actions.LATEST_TIME_OFF_REQUEST_RECEIVED -> {

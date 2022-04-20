@@ -64,7 +64,7 @@
     <color name="text_green">#439639</color>
     <color name="text_blue">#006595</color>
     <color name="text_orange">#ffff9900</color>
-
+    <color name="punch_background">#1B2A3D</color>
     <color name="fill_grey">#FAFAFA</color>
     <color name="stroke_grey">#E5E5E5</color>
     <color name="button_approve_color">#82c341</color>
@@ -85,7 +85,7 @@
     <color name="button_grey_lightest">#ededed</color>
 
     <color name="black_overlay">#4D000000</color>
-
+    <color name="orange_color">#FC6410</color>
     <color name="uhc_card_toolbar_black_overlay">#8C000000</color>
 
     <color name="white70pc">#b2ffffff</color>

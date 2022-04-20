@@ -23,7 +23,7 @@ import kotlin.collections.ArrayList
 
 open class MainTimeOffStoreImpl(dispatcher: Dispatcher, bus: EventBus) : Store(dispatcher, bus), TimeOffStore {
 
-    @Suppress("UNCHECKED_CAST")
+    //@Suppress("UNCHECKED_CAST")
     override fun onActionReceived(action: Action) {
         when (action.type) {
             Actions.TIME_OFF_SUMMARY_RECEIVED -> {

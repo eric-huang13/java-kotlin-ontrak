@@ -22,6 +22,6 @@
             tools:ignore="UnknownIdInLayout"
             tools:layout="@layout/fragment_org_level_search"/>
 
-        <include layout="@layout/progress_bar"/>
+        <include layout="@layout/progress_bar" />
     </RelativeLayout>
 </RelativeLayout>
