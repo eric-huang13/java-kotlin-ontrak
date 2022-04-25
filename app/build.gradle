@@ -142,7 +142,6 @@ dependencies {
     }
 
     testImplementation 'junit:junit:4.13'
-
     // here until project dependency versions are up to date
     compileOnly 'com.github.pengrad:jdk9-deps:1.0'
 }
