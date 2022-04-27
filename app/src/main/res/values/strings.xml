@@ -213,7 +213,7 @@
     <string name="onboard_heading_text"  formatted="false">Time &amp; Attendance Unique Code:</string>
     <string name="onboard_help_text"  formatted="false">Need help?</string>
     <string name="need_help_dialog_title"  formatted="false">Onboarding Help</string>
-    <string name="onboard_instruction_text"  formatted="false">Please enter the unique code generated in your Time and Attendance system. Once the code is entered and submitted, you will be able to access the OnTrak Application.</string>
+    <string name="onboard_instruction_text"  formatted="false">Please enter the unique code generated in your Time and Attendance system. Once the code is entered and submitted, you will be able to access the Timestar Application.</string>
     <string name="close_btn_text"  formatted="false">Close</string>
 
     <string name="submitting_status_text"  formatted="false">Submitting code&#8230;</string>
@@ -241,6 +241,6 @@
     <string name="time_off_approval_pending_request_text"  formatted="false">You have ##%d## pending request.</string>
 
     <!--About-->
-    <string name="about_app_title_text"  formatted="false">OnTrak</string>
+    <string name="about_app_title_text"  formatted="false">TimeStar</string>
 
 </resources>

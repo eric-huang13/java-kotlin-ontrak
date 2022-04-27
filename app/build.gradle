@@ -59,7 +59,7 @@ android {
             buildConfigField "String", "FULL_ESC_WEBSITE_URL", "\"https://portal.insperity.com?fromMobile=true\""
             signingConfig signingConfigs.release
             buildConfigField "String", "ENDPOINT", "\"https://mytimestar.com/hermes/mobile/v2/\""
-            resValue "string", "flavor_app_name", "OnTrak"
+            resValue "string", "flavor_app_name", "Timestar"
         }
         rc.initWith(buildTypes.release)
         rc {
@@ -67,14 +67,14 @@ android {
             versionNameSuffix " RC"
             debuggable true
             signingConfig signingConfigs.debug
-            resValue "string", "flavor_app_name", "OnTrak RC"
+            resValue "string", "flavor_app_name", "Timestar RC"
         }
         debug.initWith(buildTypes.rc)
         debug {
             applicationIdSuffix ""
             versionNameSuffix " DEV"
             buildConfigField "String", "ENDPOINT", "\"https://mytimestar.com/hermes/mobile/v2/\""
-            resValue "string", "flavor_app_name", "OnTrak DEV"
+            resValue "string", "flavor_app_name", "Timestar DEV"
             FirebasePerformance {
                 instrumentationEnabled false
             }

@@ -1,8 +1,16 @@
-<!-- drawable/close_circle.xml -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="24dp"
-    android:width="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
-    <path android:fillColor="#d9272e" android:pathData="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" />
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <group>
+        <clip-path
+            android:pathData="M-157.86,155.05h260.27v233.08h-260.27z"/>
+    </group>
+    <path
+        android:pathData="M86,57.62l0,21l-72,0l0,-21l-9,0l0,30l90,0l0,-30l-9,0z"
+        android:fillColor="#d92833"/>
+    <path
+        android:pathData="M20,12.38v60.5h60L80,12.38L20,12.38ZM68,55.23l-5.4,5.4 -12.6,-12.6 -12.6,12.6 -5.4,-5.4 12.6,-12.6 -12.6,-12.6 5.4,-5.4 12.6,12.6 12.6,-12.6 5.4,5.4 -12.6,12.6 12.6,12.6Z"
+        android:fillColor="#d92833"/>
 </vector>

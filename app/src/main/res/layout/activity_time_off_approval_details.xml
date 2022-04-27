@@ -23,7 +23,7 @@
             android:name="com.delphiaconsulting.timestar.view.fragment.TimeOffApprovalDetailsFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout="@layout/fragment_time_off_approval_details"/>
+            tools:layout="@layout/fragment_time_off_approval_details" />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
