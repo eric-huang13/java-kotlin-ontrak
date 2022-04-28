@@ -29,7 +29,7 @@
     <color name="insperity_tan_light">#e7e4d6</color>
     <color name="insperity_tan_lighter">#edebe0</color>
     <color name="insperity_red">#e73332</color>
-
+    <color name="insperity_green_update">#499957</color>
     <array name="chart_colors_array">
         <item>@color/insperity_green</item>
         <item>@color/insperity_blue_lightest</item>

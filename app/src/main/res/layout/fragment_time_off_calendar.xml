@@ -38,7 +38,7 @@
             app:tsquare_dayBackground="@color/white"
             app:tsquare_dividerColor="@color/white"
             app:tsquare_headerTextColor="@color/button_grey_light"
-            app:tsquare_titleTextColor="@color/button_grey_light"/>
+            app:tsquare_titleTextColor="@color/button_grey_light" />
 
         <Button
             android:id="@+id/previousMonthButton"

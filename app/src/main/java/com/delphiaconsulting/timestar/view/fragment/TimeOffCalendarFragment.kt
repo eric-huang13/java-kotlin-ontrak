@@ -11,6 +11,8 @@ import com.delphiaconsulting.timestar.util.StringUtil
 import com.delphiaconsulting.timestar.view.common.MonthDecorator
 import com.squareup.timessquare.CalendarCellDecorator
 import com.squareup.timessquare.CalendarPickerView
+import com.squareup.timessquare.CalendarPickerView.SelectionMode
+import com.squareup.timessquare.DefaultDayViewAdapter
 import kotlinx.android.synthetic.main.fragment_time_off_calendar.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -18,7 +20,7 @@ import org.joda.time.DateTime
 import rx.Observable
 import java.util.*
 import javax.inject.Inject
-import kotlin.collections.ArrayList
+
 
 /**
  * Created by dxsier on 07/12/17.
@@ -39,6 +41,7 @@ class TimeOffCalendarFragment : BaseFragment() {
         super.onActivityCreated(savedInstanceState)
         component.inject(this)
         calendarPicker.dividerHeight = appUtil.dpToPx(25f)
+
     }
 
     override fun onResume() {

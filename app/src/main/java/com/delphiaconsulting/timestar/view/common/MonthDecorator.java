@@ -41,5 +41,7 @@ public class MonthDecorator implements CalendarCellDecorator {
             return;
         }
         cellView.getDayOfMonthTextView().setTextColor(ContextCompat.getColor(context, R.color.text_grey_lighter));
+
+
     }
 }
