@@ -19,6 +19,6 @@
         android:paddingStart="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/half_margin"
         android:text="@string/time_off_request_responses_hint_text"
-        android:textColor="@color/insperity_green"
+        android:textColor="@color/black"
         android:textSize="@dimen/text_large"/>
 </LinearLayout>

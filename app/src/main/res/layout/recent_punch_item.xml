@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/double_full_margin"
         android:layout_toEndOf="@+id/timeText"
-        android:textColor="@color/text_blue"
+        android:textColor="@color/punch_background"
         app:layout_constraintBottom_toBottomOf="@+id/timeText"
         app:layout_constraintEnd_toStartOf="@+id/statusImage"
         app:layout_constraintStart_toEndOf="@+id/timeText"

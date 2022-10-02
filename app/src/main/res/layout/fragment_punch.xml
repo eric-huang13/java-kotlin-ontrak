@@ -32,7 +32,8 @@
             app:tabIndicatorHeight="4dp"
             app:tabMaxWidth="0dp"
             app:tabMode="fixed"
-            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/orange_color"
+            app:tabIndicatorColor="@color/orange_color"
             app:tabTextColor="@color/text_white"/>
     </com.google.android.material.appbar.AppBarLayout>
 

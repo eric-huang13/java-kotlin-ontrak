@@ -65,7 +65,7 @@ class TimeOffApprovalWidgetFragment : BaseFragment() {
             if (event.pendingRequestsAmount == 0) return
             context?.let {
                 hintText.text = StringUtil.setSpanBetweenTokens(getString(messageRes, event.pendingRequestsAmount), "##",
-                        ForegroundColorSpan(ContextCompat.getColor(it, R.color.insperity_blue_deep)), StyleSpan(Typeface.BOLD))
+                        ForegroundColorSpan(ContextCompat.getColor(it, R.color.insperity_green_update)), StyleSpan(Typeface.BOLD))
             }
         }
     }

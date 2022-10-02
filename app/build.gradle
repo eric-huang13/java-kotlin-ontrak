@@ -8,16 +8,16 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'io.fabric'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     buildToolsVersion '29.0.3'
     flavorDimensions "default"
 
     defaultConfig {
         applicationId "com.delphiaconsulting.timestar"
         minSdkVersion 20
-        targetSdkVersion 29
+        targetSdkVersion 30
         multiDexEnabled true
-        versionCode 6
+        versionCode 7
         versionName "1.2.1"
     }
 
@@ -59,7 +59,7 @@ android {
             buildConfigField "String", "FULL_ESC_WEBSITE_URL", "\"https://portal.insperity.com?fromMobile=true\""
             signingConfig signingConfigs.release
             buildConfigField "String", "ENDPOINT", "\"https://mytimestar.com/hermes/mobile/v2/\""
-            resValue "string", "flavor_app_name", "Timestar"
+            resValue "string", "flavor_app_name", "TimeStar"
         }
         rc.initWith(buildTypes.release)
         rc {

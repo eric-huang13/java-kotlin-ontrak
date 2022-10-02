@@ -2,13 +2,13 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true">
         <shape>
-            <solid android:color="@color/button_grey"/>
+            <solid android:color="@color/insperity_green_update"/>
             <corners android:radius="@dimen/buttons_radio"/>
         </shape>
     </item>
     <item>
         <shape>
-            <solid android:color="@color/button_grey_light"/>
+            <solid android:color="@color/insperity_green_update"/>
             <corners android:radius="@dimen/buttons_radio"/>
         </shape>
     </item>

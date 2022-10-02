@@ -47,10 +47,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/totalHeaderText"
-            android:textColor="@color/insperity_green"
+            android:textColor="@color/black"
             android:textSize="@dimen/text_xxlarge"
             android:textStyle="bold"
-            tools:text="8h"/>
+            tools:text="8h" />
 
         <TextView
             android:id="@+id/statusHeaderText"
@@ -150,7 +150,7 @@
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/half_margin"
         android:text="@string/time_off_request_dates_hint_text"
-        android:textColor="@color/insperity_green"
+        android:textColor="@color/black"
         android:textSize="@dimen/text_large"/>
 
     <include layout="@layout/time_off_date_header"/>

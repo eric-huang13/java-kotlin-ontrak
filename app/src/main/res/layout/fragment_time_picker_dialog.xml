@@ -6,6 +6,7 @@
     android:gravity="center"
     android:paddingBottom="@dimen/full_margin"
     android:paddingTop="@dimen/full_margin"
+    android:theme="@style/DialogTheme"
     tools:context="com.delphiaconsulting.timestar.view.fragment.TimePickerDialogFragment">
 
     <NumberPicker
@@ -20,4 +21,5 @@
         android:layout_marginStart="@dimen/double_full_margin"
         android:visibility="gone"
         tools:visibility="visible"/>
+
 </LinearLayout>

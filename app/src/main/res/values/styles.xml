@@ -11,6 +11,20 @@
         <item name="android:textColor">@color/text_black</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="DialogTheme" parent="Widget.AppCompat.ButtonBar.AlertDialog">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/punch_background</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/punch_background</item>
     </style>
 
     <style name="AppTheme.SplashTheme" parent="@style/AppTheme">
@@ -155,7 +169,9 @@
         <item name="android:textSize">12sp</item>
     </style>
 
-
+    <style name="ColorSwitchStyle">
+        <item name="colorControlActivated">@color/punch_background</item>
+    </style>
 
 
     <!-- Base application theme. -->
@@ -205,9 +221,21 @@
         <item name="android:textSize">@dimen/text_small</item>
     </style>
 
+    <style name="ButtonDarkLight">
+        <item name="android:background">@drawable/button_green_dark</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
     <style name="ButtonRedLight">
         <item name="android:background">@drawable/button_red_light</item>
         <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="ButtonWhite">
+        <item name="android:background">@drawable/white_rounded_background</item>
+        <item name="android:textColor">@color/punch_background</item>
         <item name="android:textSize">@dimen/text_small</item>
     </style>
 

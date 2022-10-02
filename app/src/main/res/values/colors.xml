@@ -86,6 +86,7 @@
 
     <color name="black_overlay">#4D000000</color>
     <color name="orange_color">#FC6410</color>
+    <color name="david_color">#CC3300</color>
     <color name="uhc_card_toolbar_black_overlay">#8C000000</color>
 
     <color name="white70pc">#b2ffffff</color>

@@ -1,6 +1,7 @@
 package com.delphiaconsulting.timestar.view.adapter
 
 import android.content.Context
+import android.graphics.Color
 import androidx.transition.TransitionManager
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DefaultItemAnimator
@@ -14,6 +15,7 @@ import com.delphiaconsulting.timestar.R
 import com.delphiaconsulting.timestar.util.PunchStatus
 import com.delphiaconsulting.timestar.view.common.AdapterItem
 import com.delphiaconsulting.timestar.view.common.PunchItem
+import kotlinx.android.synthetic.main.fragment_punch_widget.*
 import kotlinx.android.synthetic.main.recent_punch_item.view.*
 import kotlinx.android.synthetic.main.recent_punches_header_item.view.*
 import org.joda.time.DateTime
@@ -83,9 +85,10 @@ class RecentPunchesAdapter(private val context: Context?) : RecyclerView.Adapter
         holder.itemView.timeText.text = DateTime(item.punchEntity.datetime).toString(DateTimeFormat.forPattern("hh:mm aa"))
         val categoryDescription = item.punchEntity.punchCategory.description
         holder.itemView.titleText.text = if (categoryDescription.contains("Out ")) "Out" else categoryDescription
+
         context?.let {
             holder.itemView.timeText.setTextColor(ContextCompat.getColor(context, if (isMissingPunch) R.color.insperity_red else R.color.text_black))
-            holder.itemView.titleText.setTextColor(ContextCompat.getColor(context, if (isMissingPunch) R.color.insperity_red else R.color.text_blue))
+            holder.itemView.titleText.setTextColor(ContextCompat.getColor(context, if (isMissingPunch) R.color.insperity_red else if (holder.itemView.titleText.text.contains("Out")) R.color.punch_background else R.color.punch_background))
         }
 
         if (!isMissingPunch) {

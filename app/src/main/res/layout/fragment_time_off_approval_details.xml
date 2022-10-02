@@ -42,7 +42,7 @@
             android:ellipsize="end"
             android:gravity="center"
             android:maxLines="2"
-            android:textColor="@color/text_green"
+            android:textColor="@color/black"
             android:textSize="@dimen/text_large"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +53,7 @@
 
         <Button
             android:id="@+id/approveButton"
-            style="@style/ButtonGreenLight"
+            style="@style/ButtonDarkLight"
             android:layout_width="75dp"
             android:layout_height="35dp"
             android:text="@string/approve_request_button_text"

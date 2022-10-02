@@ -39,8 +39,8 @@ public class AboutFragment extends BaseFragment {
     @BindView(R.id.version_text)
     TextView version;
 
-    @BindView(R.id.list)
-    ListView listView;
+//    @BindView(R.id.list)
+//    ListView listView;
 
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
@@ -72,13 +72,13 @@ public class AboutFragment extends BaseFragment {
 
     @Subscribe
     public void onEvent(OnAboutItems event) {
-        listView.setAdapter(new ArrayAdapter<>(getActivity(), R.layout.listview_item, event.aboutItemArray));
-
-        listView.setOnItemClickListener((adapterView, view, pos, l) -> {
-            String title = store.getPageTitle(pos);
-            String htmlPage = store.getPageContent(pos);
-            startActivity(AboutWebActivity.Companion.getCallingIntent(getActivity(), title, htmlPage));
-        });
+//        listView.setAdapter(new ArrayAdapter<>(getActivity(), R.layout.listview_item, event.aboutItemArray));
+//
+//        listView.setOnItemClickListener((adapterView, view, pos, l) -> {
+//            String title = store.getPageTitle(pos);
+//            String htmlPage = store.getPageContent(pos);
+//            startActivity(AboutWebActivity.Companion.getCallingIntent(getActivity(), title, htmlPage));
+//        });
 
         showProgressBar(false);
     }

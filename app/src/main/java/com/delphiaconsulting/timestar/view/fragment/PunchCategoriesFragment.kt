@@ -1,6 +1,7 @@
 package com.delphiaconsulting.timestar.view.fragment
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.os.Bundle
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.transition.TransitionManager
@@ -175,6 +176,11 @@ class PunchCategoriesFragment : BaseFragment() {
         if (wasTransferSelected) {
             defaultOrgLevelSwitch.isChecked = true
         }
+        if(defaultOrgLevelSwitch.isChecked){
+            defaultOrgLevelsText.setTextColor(Color.parseColor("#FC6410"))
+        } else {
+            defaultOrgLevelsText.setTextColor(Color.parseColor("#000000"))
+        }
         wasTransferSelected = selectedPunchCategory?.defaultOrgLevel == false
         var visibilityArray = showCategorySpinnerConfig(!wasTransferSelected || (transferCategories?.size ?: 0) > 1, SparseIntArray())
         visibilityArray = showDefaultSwitchConfig(!wasTransferSelected && selectedPunchCategory != null && preferences.allowOrgLevelDefaultsSwitch, visibilityArray)
@@ -193,8 +199,11 @@ class PunchCategoriesFragment : BaseFragment() {
 
     private fun onDefaultOrgLevelSwitchChanged(enabled: Boolean) {
         bus.post(OnTrackPunchEvent(!connectionUtil.isConnected, "DefaultOrgLevel", if (enabled) "On" else "Off"))
-        if (enabled) {
+        if(enabled){
             restoreOrgLevelDefaults()
+            defaultOrgLevelsText.setTextColor(Color.parseColor("#FC6410"))
+        } else {
+            defaultOrgLevelsText.setTextColor(Color.parseColor("#000000"))
         }
         val visibilityArray = showOrgLevelsConfig(!enabled, SparseIntArray())
         updateVisibilityConstrains(visibilityArray)

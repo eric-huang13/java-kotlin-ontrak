@@ -1,7 +1,9 @@
 package com.delphiaconsulting.timestar.view.activity
 
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import androidx.core.content.ContextCompat
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +11,7 @@ import android.view.View
 import android.view.View.VISIBLE
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
+import android.widget.Button
 import androidx.fragment.app.DialogFragment
 import com.avast.android.dialogs.fragment.SimpleDialogFragment
 import com.delphiaconsulting.timestar.App
@@ -20,6 +23,8 @@ import com.delphiaconsulting.timestar.net.analytics.Tracker
 import com.delphiaconsulting.timestar.store.SessionStore
 import com.delphiaconsulting.timestar.util.AppUtil
 import com.delphiaconsulting.timestar.util.Preferences
+import com.delphiaconsulting.timestar.view.fragment.CustomDialogFragment
+import com.delphiaconsulting.timestar.view.fragment.TimePickerDialogFragment
 import kotlinx.android.synthetic.main.activity_onboarding.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -63,11 +68,7 @@ class OnboardingActivity : AppCompatActivity() {
     }
 
     fun onNeedHelpTextClicked(v: View) {
-        SimpleDialogFragment.createBuilder(this, supportFragmentManager)
-                .setTitle(R.string.need_help_dialog_title)
-                .setMessage(R.string.onboard_instruction_text)
-                .setPositiveButtonText(R.string.close_btn_text)
-                .show()
+        CustomDialogFragment.newInstance().show(supportFragmentManager, CustomDialogFragment.TAG)
     }
 
     fun onSubmitButtonClicked(v: View) {

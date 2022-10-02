@@ -32,9 +32,9 @@ class TimeOffApprovalsFragment : BaseFragment() {
 
     companion object {
         val TAG: String = TimeOffApprovalsFragment::class.java.simpleName
-        private val PAGES_COUNT = 3
-        private val ACTIVITY_REQUEST_CODE = 103
-        val TIME_OFF_REQUEST_ID_EXTRA = "TIME_OFF_REQUEST_ID_EXTRA"
+        private final const val PAGES_COUNT = 3
+        private final const val ACTIVITY_REQUEST_CODE = 103
+        final const val TIME_OFF_REQUEST_ID_EXTRA = "TIME_OFF_REQUEST_ID_EXTRA"
     }
 
     @Inject lateinit var bus: EventBus
@@ -50,7 +50,8 @@ class TimeOffApprovalsFragment : BaseFragment() {
         super.onActivityCreated(savedInstanceState)
         activity?.let {
             if (savedInstanceState == null && it.intent.hasExtra(TimeOffApprovalsFragment.TIME_OFF_REQUEST_ID_EXTRA)) {
-                requestEventId = it.intent.getStringExtra(TimeOffApprovalsFragment.TIME_OFF_REQUEST_ID_EXTRA)
+                requestEventId =
+                    it.intent.getStringExtra(TimeOffApprovalsFragment.TIME_OFF_REQUEST_ID_EXTRA).toString()
             }
         }
         component.inject(this)

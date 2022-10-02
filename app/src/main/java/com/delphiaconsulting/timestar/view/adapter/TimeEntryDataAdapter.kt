@@ -42,7 +42,7 @@ class TimeEntryDataAdapter(val context: Context, val bus: EventBus, private val 
             columnViews[i].gravity = properties[i].getGravity()
             columnViews[i].setPadding(0, 0, properties[i].getEndPadding(context), 0)
             if (i == 0 && item.detailItem != null && !item.highlighted) {
-                columnViews[i].setTextColor(ContextCompat.getColor(context, R.color.text_link))
+                columnViews[i].setTextColor(ContextCompat.getColor(context, R.color.punch_background))
             }
         }
         item.detailItem?.let { detailItem -> holder.itemView.itemContainer.setOnClickListener { bus.postSticky(OnTimeEntryItemClicked(detailItem, supervisorAccessed)) } }

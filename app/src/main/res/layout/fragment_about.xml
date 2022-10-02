@@ -51,11 +51,11 @@
             android:layout_height="1dp"
             android:background="@color/text_grey_lighter"/>
 
-        <ListView
-            android:id="@+id/list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"/>
+<!--        <ListView-->
+<!--            android:id="@+id/list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/white"/>-->
     </LinearLayout>
 
 </FrameLayout>

@@ -82,12 +82,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/separator_view"
-                android:layout_marginBottom="@dimen/half_margin"
                 android:layout_marginTop="@dimen/full_margin"
+                android:layout_marginBottom="@dimen/half_margin"
                 android:gravity="center"
                 android:text="@string/punch_recent_activity_text"
                 android:textSize="@dimen/text_large"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <RelativeLayout
                 android:id="@+id/latestPunchContainer"
@@ -108,7 +108,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="end"
-                        android:textColor="@color/insperity_blue"
+                        android:textColor="@color/insperity_green_update"
                         tools:text="Punch In"/>
 
                     <TextView

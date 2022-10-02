@@ -53,12 +53,12 @@
 
             <Button
                 android:id="@+id/submitButton"
-                style="@style/ButtonGreen"
+                style="@style/ButtonOrange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="onSubmitButtonClicked"
-                android:text="@string/action_submit_text"/>
+                android:text="@string/action_submit_text" />
 
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -71,7 +71,7 @@
                 android:indeterminateTintMode="src_in"
                 android:paddingLeft="82dp"
                 android:visibility="gone"
-                tools:visibility="visible"/>
+                tools:visibility="visible" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -93,10 +93,10 @@
         android:layout_below="@id/login_form_container"
         android:layout_marginTop="@dimen/half_margin"
         android:gravity="center"
+        android:onClick="onNeedHelpTextClicked"
         android:padding="@dimen/half_margin"
         android:text="@string/onboard_help_text"
-        android:onClick="onNeedHelpTextClicked"
-        android:textColor="@color/insperity_blue"/>
+        android:textColor="@color/punch_background" />
 
     <TextView
         android:id="@+id/statusText"

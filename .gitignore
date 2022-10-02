@@ -52,3 +52,6 @@ Thumbs.db
 # Linux
 *.~lock.*
 ontrak-android.zip
+app/release.keystore
+app/release/app-release.aab
+app/release/output.json
